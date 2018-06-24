@@ -8,5 +8,11 @@ namespace Controller
 {
     public class Mes
     {
+        public DateTime DiaEspecial { get; set; }
+
+        public string NivelFelicidade { get; set; }
+
+        public string LugarTop { get; set; }
+
     }
 }

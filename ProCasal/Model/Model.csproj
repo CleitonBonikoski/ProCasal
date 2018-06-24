@@ -46,9 +46,6 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <WCFMetadata Include="Connected Services\" />
-  </ItemGroup>
-  <ItemGroup>
     <ProjectReference Include="..\Controller\Controller.csproj">
       <Project>{1f197fcb-ae83-434a-9538-61a7cc1d610c}</Project>
       <Name>Controller</Name>
