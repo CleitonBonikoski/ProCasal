@@ -45,5 +45,11 @@
     <Compile Include="IPessoa.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\ProCasal\ProCasal.csproj">
+      <Project>{278a800f-df15-43ba-85da-e24128035665}</Project>
+      <Name>ProCasal</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

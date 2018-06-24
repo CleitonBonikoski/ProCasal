@@ -4,10 +4,12 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Controller
+namespace Model
 {
     public class Mes
     {
+        public DateTime IdMes { get; set; }
+
         public DateTime DiaEspecial { get; set; }
 
         public string NivelFelicidade { get; set; }

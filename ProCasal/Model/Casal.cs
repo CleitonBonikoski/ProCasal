@@ -5,10 +5,12 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Controller
+namespace Model
 {
     class Casal
     {
+        public int IdCasal { get; set; }
+
         public DateTime DataInicio { get; set; }
 
         public string PrimeiroEncontro { get; set; }

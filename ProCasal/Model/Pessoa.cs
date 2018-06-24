@@ -8,6 +8,8 @@ namespace Model
 {
     public class Pessoa
     {
+        public int IdPessoa { get; set; }
+
         public string Nome { get; set; }
 
         public string SobreNome { get; set; }
