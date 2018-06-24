@@ -8,7 +8,7 @@ namespace Interface
 {
     interface ICasal : IMes
     {
-        // Cadastrar
+        // Cadastrar Casal
 
         void CadastrarPessoaA();
         void CadastrarPessoaB();
