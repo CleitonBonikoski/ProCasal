@@ -45,5 +45,22 @@
     <Compile Include="Mes.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Connected Services\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Controller\Controller.csproj">
+      <Project>{1f197fcb-ae83-434a-9538-61a7cc1d610c}</Project>
+      <Name>Controller</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Interface\Interface.csproj">
+      <Project>{6ffe1d35-3b8e-4f22-b4ae-1c17580c656b}</Project>
+      <Name>Interface</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ProCasal\ProCasal.csproj">
+      <Project>{278a800f-df15-43ba-85da-e24128035665}</Project>
+      <Name>ProCasal</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
