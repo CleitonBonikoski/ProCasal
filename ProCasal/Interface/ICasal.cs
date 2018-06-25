@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Interface
 {
-    interface ICasal
+    public interface ICasal
     {
         // Cadastrar Casal
 

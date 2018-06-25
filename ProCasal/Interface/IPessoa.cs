@@ -2,7 +2,7 @@
 
 namespace Interface
 {
-    interface IPessoa
+    public interface IPessoa
     {
         // Cadastrar
 

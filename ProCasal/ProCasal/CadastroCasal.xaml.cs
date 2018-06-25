@@ -17,9 +17,9 @@ namespace ProCasal
     /// <summary>
     /// Interaction logic for ValidacaoLogin.xaml
     /// </summary>
-    public partial class ValidacaoLogin : Window
+    public partial class CadastroMes : Window
     {
-        public ValidacaoLogin()
+        public CadastroMes()
         {
             InitializeComponent();
         }

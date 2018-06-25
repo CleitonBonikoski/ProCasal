@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace Model
 {
-    class Casal
+    public class Casal
     {
         public int IdCasal { get; set; }
 

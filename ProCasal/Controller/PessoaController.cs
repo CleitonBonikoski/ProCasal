@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Model;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -6,8 +7,14 @@ using System.Threading.Tasks;
 
 namespace Controller
 {
-    class PessoaController 
+    public class PessoaController
     {
+        Pessoa pes = new Pessoa();
+
+        public PessoaController()
+        {
+            pes.Nome = "Joao";
+        }
         
     }
 }

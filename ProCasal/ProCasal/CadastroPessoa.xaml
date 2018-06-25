@@ -16,7 +16,7 @@
         <TextBox HorizontalAlignment="Left" Height="23" Margin="145,129,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="214"/>
         <DatePicker HorizontalAlignment="Left" Margin="145,174,0,0" VerticalAlignment="Top" Width="214"/>
         <ComboBox HorizontalAlignment="Left" Margin="145,215,0,0" VerticalAlignment="Top" Width="214"/>
-        <Button Content="Cadastrar" HorizontalAlignment="Left" Margin="145,274,0,0" VerticalAlignment="Top" Width="75"/>
+        <Button Content="Cadastrar" HorizontalAlignment="Left" Margin="145,274,0,0" VerticalAlignment="Top" Width="75" Click="CadastroCasal"/>
         <Button Content="Limpar" HorizontalAlignment="Left" Margin="257,274,0,0" VerticalAlignment="Top" Width="75"/>
 
     </Grid>

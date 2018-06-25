@@ -33,8 +33,7 @@ namespace ProCasal
 
         private void Login(object sender, RoutedEventArgs e)
         {
-            ValidacaoLogin validacaoLogin = new ValidacaoLogin();
-            validacaoLogin.Show();
+            // Realizar validacao para login
         }
     }
 }

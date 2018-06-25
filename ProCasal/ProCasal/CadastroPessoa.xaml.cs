@@ -23,5 +23,15 @@ namespace ProCasal
         {
             InitializeComponent();
         }
+
+        private void CadastroCasal(object sender, RoutedEventArgs e)
+        {
+            if (true)
+            {
+                CadastroMes cadastroMes = new CadastroMes();
+                cadastroMes.Show();
+
+            }
+        }
     }
 }

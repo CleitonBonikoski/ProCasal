@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Controller
 {
-    class CasalController 
+    public class CasalController
     {
 
     }

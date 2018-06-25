@@ -57,8 +57,8 @@
     <Compile Include="CadastroPessoa.xaml.cs">
       <DependentUpon>CadastroPessoa.xaml</DependentUpon>
     </Compile>
-    <Compile Include="ValidacaoLogin.xaml.cs">
-      <DependentUpon>ValidacaoLogin.xaml</DependentUpon>
+    <Compile Include="CadastroCasal.xaml.cs">
+      <DependentUpon>CadastroCasal.xaml</DependentUpon>
     </Compile>
     <Page Include="MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
@@ -76,7 +76,7 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="ValidacaoLogin.xaml">
+    <Page Include="CadastroCasal.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
