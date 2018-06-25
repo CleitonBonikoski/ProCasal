@@ -5,8 +5,19 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:ProCasal"
         mc:Ignorable="d"
-        Title="Cadastrar Pessoa" Height="450" Width="800">
-    <Grid>
-        
+        Title="Cadastrar Pessoa" Height="402.439" Width="498.78">
+    <Grid RenderTransformOrigin="0.02,0.025" Margin="0,0,2,4">
+        <Label Content="Cadastro de Pessoa" HorizontalAlignment="Left" Margin="156,24,0,0" VerticalAlignment="Top" Height="39" Width="199" FontSize="18" FontWeight="Bold" FontStyle="Italic"/>
+        <Label Content="Nome : " HorizontalAlignment="Left" VerticalAlignment="Top" RenderTransformOrigin="-0.298,-0.343" Margin="81,78,0,0" FontSize="14"/>
+        <Label Content="SobreNome : " HorizontalAlignment="Left" Margin="45,123,0,0" VerticalAlignment="Top" FontSize="14"/>
+        <Label Content="Data Nascimento : " HorizontalAlignment="Left" Margin="13,169,0,0" VerticalAlignment="Top" FontSize="14"/>
+        <Label Content="Sexo : " HorizontalAlignment="Left" VerticalAlignment="Top" RenderTransformOrigin="-0.298,-0.343" Margin="90,213,0,0" FontSize="14"/>
+        <TextBox HorizontalAlignment="Left" Height="23" Margin="145,84,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="214"/>
+        <TextBox HorizontalAlignment="Left" Height="23" Margin="145,129,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="214"/>
+        <DatePicker HorizontalAlignment="Left" Margin="145,174,0,0" VerticalAlignment="Top" Width="214"/>
+        <ComboBox HorizontalAlignment="Left" Margin="145,215,0,0" VerticalAlignment="Top" Width="214"/>
+        <Button Content="Cadastrar" HorizontalAlignment="Left" Margin="145,274,0,0" VerticalAlignment="Top" Width="75"/>
+        <Button Content="Limpar" HorizontalAlignment="Left" Margin="257,274,0,0" VerticalAlignment="Top" Width="75"/>
+
     </Grid>
 </Window>
