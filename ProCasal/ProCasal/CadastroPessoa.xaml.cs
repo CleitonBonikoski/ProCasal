@@ -28,8 +28,8 @@ namespace ProCasal
         {
             if (true)
             {
-                CadastroMes cadastroMes = new CadastroMes();
-                cadastroMes.Show();
+                CadastroCasal cadastroCasal = new CadastroCasal();
+                cadastroCasal.Show();
 
             }
         }
