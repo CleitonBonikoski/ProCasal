@@ -25,5 +25,16 @@ namespace ProCasal
             InitializeComponent();
         }
 
+        private void CadastrarPessoa(object sender, RoutedEventArgs e)
+        {
+            CadastroPessoa cadastroPessoa = new CadastroPessoa();
+            cadastroPessoa.Show();
+        }
+
+        private void Login(object sender, RoutedEventArgs e)
+        {
+            ValidacaoLogin validacaoLogin = new ValidacaoLogin();
+            validacaoLogin.Show();
+        }
     }
 }

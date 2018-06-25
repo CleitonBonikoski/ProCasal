@@ -8,8 +8,8 @@
         Title="Bem-Vindo" Height="450" Width="297.561">
     <Grid Margin="0,0,13,0">
         <Label Content="Bem-Vindo" HorizontalAlignment="Left" Margin="79,41,0,0" VerticalAlignment="Top" Width="113" FontWeight="Bold" FontSize="18" FontStyle="Italic"/>
-        <Button Content="Cadastrar Pessoa" HorizontalAlignment="Left" Margin="64,317,0,0" VerticalAlignment="Top" Width="144" Height="31" FontSize="16" FontStyle="Italic"/>
-        <Button Content="Login" HorizontalAlignment="Left" Margin="64,254,0,0" VerticalAlignment="Top" Width="144" Height="31" FontSize="16" FontStyle="Italic"/>
+        <Button Content="Cadastrar Pessoa" HorizontalAlignment="Left" Margin="64,317,0,0" VerticalAlignment="Top" Width="144" Height="31" FontSize="16" FontStyle="Italic" Click="CadastrarPessoa"/>
+        <Button Content="Login" HorizontalAlignment="Left" Margin="64,254,0,0" VerticalAlignment="Top" Width="144" Height="31" FontSize="16" FontStyle="Italic" Click="Login"/>
         <TextBox HorizontalAlignment="Left" Height="23" Margin="88,106,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120" RenderTransformOrigin="-0.183,-1.864"/>
         <Label Content="Usuário" HorizontalAlignment="Left" Margin="10,103,0,0" VerticalAlignment="Top" RenderTransformOrigin="-8.341,0.223"/>
         <PasswordBox HorizontalAlignment="Left" Margin="88,150,0,0" VerticalAlignment="Top" Width="120"/>
