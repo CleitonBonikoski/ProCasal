@@ -6,7 +6,24 @@
         xmlns:local="clr-namespace:ProCasal"
         mc:Ignorable="d"
         Title="Bem-Vindo" Height="450" Width="800">
-    <Grid>
-        
+    <Grid RenderTransformOrigin="0.95,0.179">
+        <Label Content="Bem-Vindo" HorizontalAlignment="Left" Margin="327,52,0,0" VerticalAlignment="Top" Width="113" FontWeight="Bold" FontSize="18" FontStyle="Italic"/>
+        <Button Content="Cadastrar Pessoa" HorizontalAlignment="Left" Margin="141,318,0,0" VerticalAlignment="Top" Width="144" Height="38" FontSize="16" FontStyle="Italic"/>
+        <Button Content="Cadastrar Mes" HorizontalAlignment="Left" Margin="314,318,0,0" VerticalAlignment="Top" Width="144" Height="38" FontSize="16" FontStyle="Italic"/>
+        <Button Content="Cadastrar Casal" HorizontalAlignment="Left" Margin="495,318,0,0" VerticalAlignment="Top" Width="144" Height="38" FontSize="16" FontStyle="Italic" RenderTransformOrigin="0.626,0.571"/>
+        <Button Content="Login" HorizontalAlignment="Left" Margin="327,242,0,0" VerticalAlignment="Top" Width="113" Height="34" FontSize="16" FontStyle="Italic" Click="Button_Click"/>
+        <PasswordBox HorizontalAlignment="Left" Margin="327,191,0,0" VerticalAlignment="Top" Width="128" RenderTransformOrigin="0.5,0.5">
+            <PasswordBox.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="0.13"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </PasswordBox.RenderTransform>
+        </PasswordBox>
+        <Label Content="Usuario : " HorizontalAlignment="Left" Margin="245,129,0,0" VerticalAlignment="Top" Width="62" FontWeight="Bold" Height="25" RenderTransformOrigin="-0.337,0.136" FontSize="14"/>
+        <Label Content="Senha : " HorizontalAlignment="Left" Margin="245,186,0,0" VerticalAlignment="Top" Width="62" FontWeight="Bold" Height="25" RenderTransformOrigin="-0.337,0.136" FontSize="14"/>
+        <TextBox HorizontalAlignment="Left" Height="23" Margin="327,131,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="131"/>
     </Grid>
 </Window>
