@@ -10,7 +10,7 @@ namespace Interface
     {
         // Cadastrar
 
-        void CadastrarMes();
+        int CadastrarMes();
 
         // Editar
 

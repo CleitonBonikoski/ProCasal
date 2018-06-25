@@ -8,7 +8,7 @@ namespace Model
 {
     public class Mes
     {
-        public DateTime IdMes { get; set; }
+        public int IdMes { get; set; }
 
         public DateTime DiaEspecial { get; set; }
 

@@ -6,24 +6,23 @@ using System.Threading.Tasks;
 
 namespace Interface
 {
-    interface ICasal : IMes
+    interface ICasal
     {
         // Cadastrar Casal
 
-        void CadastrarPessoaA();
-        void CadastrarPessoaB();
+        int CadastrarCasal(int pessoaA, int pessoaB);
 
-        // Excluir
-        void ExcluirPessoaA(int IdPessoaA);
-        void ExcluirPessoaB(int IdPessoaB);
+        // Excluir Casal
 
-        //Editar
-        void EditarPessoaA(int IdPessoaA);
-        void EditarPessoaB(int IdPessoaB);
+        void ExcluirPessoaCasal(int IdPessoa);
 
-        //Listar
-        List<string> ListarPessoaA(int IdPessoaA);
-        List<string> ListarPessoaB(int IdPessoaB);
+        //Editar Casal
+
+        void EditarPessoaCasal(int IdPessoa, int comando);
+
+        //Listar Casal
+
+        List<string> ListarPessoaCasal(int IdCasal);
 
 
     }
