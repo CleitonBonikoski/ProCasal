@@ -4,9 +4,10 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Model
+namespace Controller
 {
-    class CasalController
+    class CasalController 
     {
+
     }
 }
