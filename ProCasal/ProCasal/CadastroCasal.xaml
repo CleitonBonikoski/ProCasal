@@ -6,7 +6,7 @@
         xmlns:local="clr-namespace:ProCasal"
         mc:Ignorable="d"
         Title="Cadastro Casal" Height="450" Width="800">
-    <Grid>
+    <Grid Background="Gray">
         <Label Content="Casal" HorizontalAlignment="Left" Margin="42,48,0,0" VerticalAlignment="Top" Width="109" FontSize="16" FontWeight="Bold" FontStyle="Italic" d:IsLocked="True"/>
         <Label Content="Pessoa A" HorizontalAlignment="Left" Margin="170,53,0,0" VerticalAlignment="Top" Width="184"/>
         <Label Content="Pessoa B" HorizontalAlignment="Left" Margin="456,53,0,0" VerticalAlignment="Top" Width="184"/>
