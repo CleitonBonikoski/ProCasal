@@ -7,6 +7,12 @@
         mc:Ignorable="d"
         Title="Cadastro Casal" Height="450" Width="800">
     <Grid>
-        
+        <Label Content="Casal" HorizontalAlignment="Left" Margin="42,48,0,0" VerticalAlignment="Top" Width="109" FontSize="16" FontWeight="Bold" FontStyle="Italic" d:IsLocked="True"/>
+        <Label Content="Pessoa A" HorizontalAlignment="Left" Margin="170,53,0,0" VerticalAlignment="Top" Width="184"/>
+        <Label Content="Pessoa B" HorizontalAlignment="Left" Margin="456,53,0,0" VerticalAlignment="Top" Width="184"/>
+        <Label Content="AND" HorizontalAlignment="Left" Margin="363,53,0,0" VerticalAlignment="Top"/>
+        <TextBlock Foreground="Green" HorizontalAlignment="Left" Margin="42,129,0,0" TextWrapping="Wrap" Text="Resumo" VerticalAlignment="Top" FontSize="18" FontWeight="Bold" FontStyle="Italic"/>
+        <TextBlock Foreground="Blue" HorizontalAlignment="Left" Margin="332,134,0,0" TextWrapping="Wrap" Text="Detalhamento" VerticalAlignment="Top" FontSize="18" FontWeight="Bold" FontStyle="Italic"/>
+
     </Grid>
 </Window>

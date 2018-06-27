@@ -33,7 +33,17 @@ namespace ProCasal
 
         private void Login(object sender, RoutedEventArgs e)
         {
-            // Realizar validacao para login
+
+            if (usuarioLogin.Equals(1))
+            {
+                // Realizar validacao para login
+                CadastroCasal cadastroCasal = new CadastroCasal();
+                cadastroCasal.Show();
+
+            }
+
+            // this.Close();
+            
         }
     }
 }
