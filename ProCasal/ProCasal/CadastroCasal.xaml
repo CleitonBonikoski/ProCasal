@@ -5,14 +5,11 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:ProCasal"
         mc:Ignorable="d"
-        Title="Cadastro Casal" Height="450" Width="800">
-    <Grid Background="Gray">
+        Title="Cadastro Casal" Height="450" Width="518.293">
+    <Grid Background="Gray" Margin="0,0,2,0">
         <Label Content="Casal" HorizontalAlignment="Left" Margin="42,48,0,0" VerticalAlignment="Top" Width="109" FontSize="16" FontWeight="Bold" FontStyle="Italic" d:IsLocked="True"/>
-        <Label Content="Pessoa A" HorizontalAlignment="Left" Margin="170,53,0,0" VerticalAlignment="Top" Width="184"/>
-        <Label Content="Pessoa B" HorizontalAlignment="Left" Margin="456,53,0,0" VerticalAlignment="Top" Width="184"/>
-        <Label Content="AND" HorizontalAlignment="Left" Margin="363,53,0,0" VerticalAlignment="Top"/>
-        <TextBlock Foreground="Green" HorizontalAlignment="Left" Margin="42,129,0,0" TextWrapping="Wrap" Text="Resumo" VerticalAlignment="Top" FontSize="18" FontWeight="Bold" FontStyle="Italic"/>
-        <TextBlock Foreground="Blue" HorizontalAlignment="Left" Margin="332,134,0,0" TextWrapping="Wrap" Text="Detalhamento" VerticalAlignment="Top" FontSize="18" FontWeight="Bold" FontStyle="Italic"/>
+        <TextBlock Name="txbPessoaA" Foreground="Green" HorizontalAlignment="Left" Margin="127,51,0,0" TextWrapping="Wrap" Text="Pessoa A" VerticalAlignment="Top" FontSize="18" FontWeight="Bold" FontStyle="Italic"/>
+        <TextBlock Name="txbPessoaB" Foreground="Blue" HorizontalAlignment="Left" Margin="348,51,0,0" TextWrapping="Wrap" Text="Pessoa B" VerticalAlignment="Top" FontSize="18" FontWeight="Bold" FontStyle="Italic"/>
 
     </Grid>
 </Window>

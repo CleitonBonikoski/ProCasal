@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Model;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -22,6 +23,15 @@ namespace ProCasal
         public CadastroCasal()
         {
             InitializeComponent();
+
+            Pessoa pessoa = new Pessoa();
+
+            txbPessoaA.Text = pessoa.Nome = " Joao";
+
+                 //txbPessoaB.Text = pessoa.Nome = " Maria";
+                //pessoa.DataNasc = "20/09/1995";
+                //pessoa.Sexo = "Masculino";
+
         }
     }
 }
