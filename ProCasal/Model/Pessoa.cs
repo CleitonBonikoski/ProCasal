@@ -14,7 +14,7 @@ namespace Model
 
         public string SobreNome { get; set; }
 
-        public DateTime DataNasc { get; set; }
+        public string DataNasc { get; set; }
 
         public string Sexo { get; set; }
 
