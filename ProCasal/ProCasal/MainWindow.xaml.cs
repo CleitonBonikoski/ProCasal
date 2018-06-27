@@ -31,6 +31,7 @@ namespace ProCasal
         {
             CadastroPessoa cadastroPessoa = new CadastroPessoa();
             cadastroPessoa.Show();
+            Close();
         }
 
         private void Login(object sender, RoutedEventArgs e)
@@ -38,13 +39,14 @@ namespace ProCasal
             
             if (!usuarioLogin.Text.Equals("") && senhaLogin.Password != "")
             {
+                
                 // Realizar validacao para login
                 CadastroCasal cadastroCasal = new CadastroCasal();
                 cadastroCasal.Show();
-
+                Close();
             }
 
-            // this.Close();
+            
             
         }
     }
