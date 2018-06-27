@@ -13,7 +13,7 @@
         <Label Content="Senha" HorizontalAlignment="Left" Margin="10,144,0,0" VerticalAlignment="Top" RenderTransformOrigin="-8.341,0.223" Width="50"/>
 
         <TextBox Name="usuarioLogin" Background="LightGray" HorizontalAlignment="Left" Height="23" Margin="88,106,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120" RenderTransformOrigin="-0.183,-1.864"/>
-        <PasswordBox Name="senhaLogin" Background="LightGray" HorizontalAlignment="Left" Margin="88,150,0,0" VerticalAlignment="Top" Width="120"/>
+        <PasswordBox Name="senhaLogin" Background="LightGray"  HorizontalAlignment="Left" Margin="88,150,0,0" VerticalAlignment="Top" Width="120"/>
        
         <Button Content="Login" HorizontalAlignment="Left" Margin="64,254,0,0" VerticalAlignment="Top" Width="144" Height="31" FontSize="16" FontStyle="Italic" Click="Login"/>
         <Button Content="Cadastrar Pessoa" HorizontalAlignment="Left" Margin="64,317,0,0" VerticalAlignment="Top" Width="144" Height="31" FontSize="16" FontStyle="Italic" Click="CadastrarPessoa"/>
