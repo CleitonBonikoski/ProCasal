@@ -34,7 +34,7 @@ namespace ProCasal
         private void Login(object sender, RoutedEventArgs e)
         {
 
-            if (usuarioLogin.Equals(1))
+            if (!usuarioLogin.Text.Equals(""))
             {
                 // Realizar validacao para login
                 CadastroCasal cadastroCasal = new CadastroCasal();

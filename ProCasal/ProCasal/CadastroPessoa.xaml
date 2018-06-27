@@ -12,7 +12,7 @@
         <Label Content="SobreNome : " HorizontalAlignment="Left" Margin="45,123,0,0" VerticalAlignment="Top" FontSize="14"/>
         <Label Content="Data Nascimento : " HorizontalAlignment="Left" Margin="13,169,0,0" VerticalAlignment="Top" FontSize="14"/>
         <Label Content="Sexo : " HorizontalAlignment="Left" VerticalAlignment="Top" RenderTransformOrigin="-0.298,-0.343" Margin="90,213,0,0" FontSize="14"/>
-        <TextBox Background="LightGray" HorizontalAlignment="Left" Height="23" Margin="145,84,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="214" TextChanged="TextBox_TextChanged"/>
+        <!--<TextBox Background="LightGray" HorizontalAlignment="Left" Height="23" Margin="145,84,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="214" TextChanged="TextBox_TextChanged"/>-->
         <TextBox Background="LightGray" HorizontalAlignment="Left" Height="23" Margin="145,129,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="214"/>
         <DatePicker Background="LightGray" HorizontalAlignment="Left" Margin="145,174,0,0" VerticalAlignment="Top" Width="214"/>
         <ComboBox Background="LightGray" HorizontalAlignment="Left" Margin="145,215,0,0" VerticalAlignment="Top" Width="214"/>
