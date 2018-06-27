@@ -30,8 +30,16 @@ namespace ProCasal
             {
                 CadastroCasal cadastroCasal = new CadastroCasal();
                 cadastroCasal.Show();
-
+                Close();
             }
+        }
+
+        private void LimparCampos(object sender, RoutedEventArgs e)
+        {
+            nomeCadastroPessoa.Text = "";
+            sobreNomeCadastroPessoa.Text = "";
+            dataNascimentoCadastroPessoa.Text = "";
+            sexoCadastroPessoa.Text = "";
         }
     }
 }
