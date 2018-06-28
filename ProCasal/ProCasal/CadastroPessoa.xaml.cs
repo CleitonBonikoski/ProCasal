@@ -26,12 +26,6 @@ namespace ProCasal
            
             if (!nomeCadastroPessoa.Text.Equals("") && !sobreNomeCadastroPessoa.Text.Equals("") && !sexoCadastroPessoa.Text.Equals(""))
             {
-                //Pessoa pessoa = new Pessoa();
-                //pessoa.Nome = nomeCadastroPessoa.Text;
-                //pessoa.SobreNome = sobreNomeCadastroPessoa.Text;
-                //pessoa.DataNasc = dataNascimentoCadastroPessoa.Text;
-                //pessoa.Sexo = sexoCadastroPessoa.Text;
-
                 pessoaController.CadastrarPessoa(nomeCadastroPessoa.Text, sobreNomeCadastroPessoa.Text, dataNascimentoCadastroPessoa.Text, sexoCadastroPessoa.Text);
 
                 CadastroCasal cadastroCasal = new CadastroCasal();

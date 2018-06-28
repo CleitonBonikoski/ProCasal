@@ -13,8 +13,9 @@ namespace Controller
         public void CadastrarPessoa()
         {
             Pessoa pessoa = new Pessoa();
+
             pessoa.IdPessoa = 1;
-            pessoa.Nome = "Joao";
+            pessoa.Nome = "Teste";
             pessoa.SobreNome = "Silva";
             pessoa.DataNasc = "20/08/1992";
             pessoa.Sexo = "Masculino";
@@ -35,6 +36,9 @@ namespace Controller
             pessoaAtual.SobreNome = sobreNome;
             pessoaAtual.DataNasc = dataNasc;
             pessoaAtual.Sexo = sexo;
+
+            context.dBpessoa.Add(pessoaAtual);
+            context.SaveChanges();
 
             lstPessoas.Add(pessoaAtual);
 
