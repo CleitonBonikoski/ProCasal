@@ -32,7 +32,10 @@ namespace Controller
             pessoaAtual.Sexo = sexo;
 
             lstPessoas.Add(pessoaAtual);
+
         }
+
+
         
 
     }

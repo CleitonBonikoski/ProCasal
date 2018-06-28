@@ -10,11 +10,6 @@ namespace ProCasal
         public CadastroCasal()
         {
             InitializeComponent();
-
-                 //txbPessoaB.Text = pessoa.Nome = " Maria";
-                //pessoa.DataNasc = "20/09/1995";
-                //pessoa.Sexo = "Masculino";
-
         }
     }
 }
