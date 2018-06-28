@@ -1,4 +1,5 @@
-﻿using System.Windows;
+﻿using Controller;
+using System.Windows;
 
 namespace ProCasal
 {
@@ -7,11 +8,14 @@ namespace ProCasal
     /// </summary>
     public partial class MainWindow : Window
     {
+        PessoaController pes = new PessoaController();
+
         public MainWindow()
         {
             InitializeComponent();
             usuarioLogin.MaxLength = 40;
             senhaLogin.MaxLength = 14;
+            pes.CadastrarPessoa();
         }
 
         private void CadastrarPessoa(object sender, RoutedEventArgs e)
@@ -33,8 +37,6 @@ namespace ProCasal
                 Close();
             }
 
-            
-            
         }
     }
 }

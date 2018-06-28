@@ -6,18 +6,16 @@ namespace Controller
     {
         private Context context = new Context();
 
-        public PessoaController()
+        public void CadastrarPessoa()
         {
-            
-            Pessoa pes = new Pessoa();
+            Pessoa pessoa = new Pessoa();
+            pessoa.IdPessoa = 1;
+            pessoa.Nome = "Joao";
+            pessoa.SobreNome = "Silva";
+            pessoa.DataNasc = "20/08/1992";
+            pessoa.Sexo = "Masculino";
 
-            pes.IdPessoa = 1;
-            pes.Nome = "Joao";
-            pes.SobreNome = "Silva";
-            pes.DataNasc = "20/08/1992";
-            pes.Sexo = "Masculino";
-
-            context.dBpessoa.Add(pes);
+            context.dBpessoa.Add(pessoa);
             context.SaveChanges();
             
         }

@@ -1,5 +1,4 @@
-﻿using Model;
-using System.Windows;
+﻿using System.Windows;
 
 namespace ProCasal
 {
@@ -11,10 +10,6 @@ namespace ProCasal
         public CadastroCasal()
         {
             InitializeComponent();
-
-            Pessoa pessoa = new Pessoa();
-
-            txbPessoaA.Text = pessoa.Nome = " Joao";
 
                  //txbPessoaB.Text = pessoa.Nome = " Maria";
                 //pessoa.DataNasc = "20/09/1995";

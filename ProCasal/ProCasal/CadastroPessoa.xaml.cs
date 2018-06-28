@@ -1,6 +1,7 @@
-﻿using Model;
+﻿using System.Data.Entity.Migrations.Model;
 using System;
 using System.Windows;
+using Controller;
 
 namespace ProCasal
 {
@@ -9,6 +10,8 @@ namespace ProCasal
     /// </summary>
     public partial class CadastroPessoa : Window
     {
+        PessoaController pessoaController = new PessoaController();
+
         public CadastroPessoa()
         {
             InitializeComponent();
@@ -19,11 +22,11 @@ namespace ProCasal
         {
             if (!nomeCadastroPessoa.Text.Equals("") && !sobreNomeCadastroPessoa.Text.Equals("") && !sexoCadastroPessoa.Text.Equals(""))
             {
-                Pessoa pessoa = new Pessoa();
-                pessoa.Nome = nomeCadastroPessoa.Text;
-                pessoa.SobreNome = sobreNomeCadastroPessoa.Text;
-                pessoa.DataNasc = dataNascimentoCadastroPessoa.Text;
-                pessoa.Sexo = sexoCadastroPessoa.Text;
+                //Pessoa pessoa = new Pessoa();
+                //pessoa.Nome = nomeCadastroPessoa.Text;
+                //pessoa.SobreNome = sobreNomeCadastroPessoa.Text;
+                //pessoa.DataNasc = dataNascimentoCadastroPessoa.Text;
+                //pessoa.Sexo = sexoCadastroPessoa.Text;
 
                 CadastroCasal cadastroCasal = new CadastroCasal();
                 cadastroCasal.Show();

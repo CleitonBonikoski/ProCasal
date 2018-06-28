@@ -53,18 +53,14 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="App.config" />
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
     <ProjectReference Include="..\Model\Model.csproj">
       <Project>{a21eb2a1-8abb-4874-b94a-2ccf6e74bd70}</Project>
       <Name>Model</Name>
     </ProjectReference>
-    <ProjectReference Include="..\ProCasal\ProCasal.csproj">
-      <Project>{278a800f-df15-43ba-85da-e24128035665}</Project>
-      <Name>ProCasal</Name>
-    </ProjectReference>
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="App.config" />
-    <None Include="packages.config" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

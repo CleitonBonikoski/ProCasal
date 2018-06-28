@@ -9,7 +9,7 @@ namespace Controller
 
         public CasalController()
         {
-            casal.DataInicio = DateTime.Today;
+            casal.DataInicio = Convert.ToString(DateTime.Today);
         }
     }
 }
