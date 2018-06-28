@@ -13,9 +13,6 @@ namespace ProCasal
         public MainWindow()
         {
             InitializeComponent();
-            usuarioLogin.MaxLength = 40;
-            senhaLogin.MaxLength = 14;
-            pes.CadastrarPessoa();
         }
 
         private void CadastrarPessoa(object sender, RoutedEventArgs e)
@@ -28,9 +25,8 @@ namespace ProCasal
         private void Login(object sender, RoutedEventArgs e)
         {
             
-            if (!usuarioLogin.Text.Equals("") && senhaLogin.Password != "")
-            {
-                
+            if (!nomeLogin.Text.Equals("") && !sobreNomeLogin.Text.Equals(""))
+            {                
                 // Realizar validacao para login
                 CadastroCasal cadastroCasal = new CadastroCasal();
                 cadastroCasal.Show();
