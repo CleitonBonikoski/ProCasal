@@ -5,9 +5,8 @@ using System.Linq;
 
 namespace Controller
 {
-    public class PessoaController 
+    public class PessoaController
     {
-        List<Pessoa> lstPessoas = new List<Pessoa>();
         private Context context = new Context();
 
         #region cadastrar Pessoa
@@ -25,15 +24,17 @@ namespace Controller
 
             context.dBpessoa.Add(pessoa);
             context.SaveChanges();
-            
+
         }
         #endregion
 
         #region CadastrarPessoa Com Parametros
 
-        public void CadastrarPessoa(string nome, string sobreNome, string dataNasc, string sexo)
+        public int CadastrarPessoa(string nome, string sobreNome, string dataNasc, string sexo)
         {
             Pessoa pessoaAtual = new Pessoa();
+            Pessoa pessoaSession = new Pessoa();
+
 
             pessoaAtual.Nome = nome;
             pessoaAtual.SobreNome = sobreNome;
@@ -43,8 +44,18 @@ namespace Controller
             context.dBpessoa.Add(pessoaAtual);
             context.SaveChanges();
 
-            lstPessoas.Add(pessoaAtual);
+            pessoaSession = BuscarPessoa(pessoaAtual.Nome, pessoaAtual.SobreNome, pessoaAtual.DataNasc, pessoaAtual.Sexo);
 
+            return pessoaSession.IdPessoa;
+        }
+
+        #endregion
+
+        #region BuscarPessoa
+
+        private Pessoa BuscarPessoa(string nome, string sobreNome, string dataNasc, string sexo)
+        {
+            return context.dBpessoa.Where(a => a.Nome == nome && a.SobreNome == sobreNome && a.DataNasc == dataNasc && a.Sexo == sexo).FirstOrDefault();
         }
 
         #endregion
@@ -60,11 +71,20 @@ namespace Controller
             }
             catch (Exception)
             {
-                return null;                
+                return null;
             }
         }
 
         #endregion
 
+        #region pessoaSession
+
+        public Pessoa pessoaSession(string identificador)
+        {
+            int identificadorP = Convert.ToInt32(identificador);
+            return context.dBpessoa.Where(p => p.IdPessoa == identificadorP).FirstOrDefault();
+        }
+
+        #endregion
     }
 }

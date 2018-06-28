@@ -1,4 +1,7 @@
-﻿using System.Windows;
+﻿using Controller;
+using Model;
+using System;
+using System.Windows;
 
 namespace ProCasal
 {
@@ -7,10 +10,28 @@ namespace ProCasal
     /// </summary>
     public partial class CadastroCasal : Window
     {
+        PessoaController pessoaController = new PessoaController();
+
+        #region CadastroCasal
+
         public CadastroCasal()
         {
             InitializeComponent();
+
         }
+
+        #endregion
+
+        #region SetParmCadastro
+        public void SetParmCadastro()
+        {
+            var usuario = Application.Current.Properties["_user"] as Pessoa;
+            IdPessoaA.Text = Convert.ToString(usuario.IdPessoa);
+            txbPessoaA.Text = usuario.Nome;
+        }
+        #endregion
+
+        #region VoltarLogin
 
         private void VoltarLogin(object sender, RoutedEventArgs e)
         {
@@ -19,11 +40,20 @@ namespace ProCasal
             Close();
         }
 
+        #endregion
+
+        #region VoltarCadastroPessoa
+
         private void VoltarCadastroPessoa(object sender, RoutedEventArgs e)
         {
             CadastroPessoa cadastroPessoa = new CadastroPessoa();
             cadastroPessoa.Show();
             Close();
         }
+
+        #endregion
+
+
+
     }
 }
