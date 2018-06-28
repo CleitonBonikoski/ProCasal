@@ -54,5 +54,11 @@ namespace ProCasal
         }
         #endregion
 
+        private void VoltarLogin(object sender, RoutedEventArgs e)
+        {
+            MainWindow login = new MainWindow();
+            login.Show();
+            Close();
+        }
     }
 }

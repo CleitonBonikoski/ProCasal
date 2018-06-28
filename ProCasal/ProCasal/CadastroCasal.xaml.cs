@@ -11,5 +11,19 @@ namespace ProCasal
         {
             InitializeComponent();
         }
+
+        private void VoltarLogin(object sender, RoutedEventArgs e)
+        {
+            MainWindow login = new MainWindow();
+            login.Show();
+            Close();
+        }
+
+        private void VoltarCadastroPessoa(object sender, RoutedEventArgs e)
+        {
+            CadastroPessoa cadastroPessoa = new CadastroPessoa();
+            cadastroPessoa.Show();
+            Close();
+        }
     }
 }
