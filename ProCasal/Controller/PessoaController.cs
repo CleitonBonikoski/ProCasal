@@ -8,6 +8,8 @@ namespace Controller
         List<Pessoa> lstPessoas = new List<Pessoa>();
         private Context context = new Context();
 
+        #region cadastrar Pessoa
+
         public void CadastrarPessoa()
         {
             Pessoa pessoa = new Pessoa();
@@ -21,6 +23,9 @@ namespace Controller
             context.SaveChanges();
             
         }
+        #endregion
+
+        #region CadastrarPessoa Com Parametros
 
         public void CadastrarPessoa(string nome, string sobreNome, string dataNasc, string sexo)
         {
@@ -35,8 +40,23 @@ namespace Controller
 
         }
 
+        #endregion
 
+        #region ValidacaoLogin
+
+        public bool ValidacaoLogin(string nome, string sobreNome)
+        {            
+            foreach (var item in lstPessoas)
+            {
+                if(item.Nome.Equals(nome) && item.SobreNome.Equals(sobreNome))
+                {
+                    return true;
+                }                
+            }
+            return false;            
+        }
+
+        #endregion
         
-
     }
 }

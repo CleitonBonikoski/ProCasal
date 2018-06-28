@@ -8,7 +8,7 @@ namespace Controller
 
         public MesController()
         {
-            mes.LugarTop = "Barigui";
+        
         }
     }
 }

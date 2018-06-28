@@ -12,12 +12,15 @@ namespace ProCasal
     {
         PessoaController pessoaController = new PessoaController();
 
+        #region CadastroPessoa
         public CadastroPessoa()
         {
             InitializeComponent();
             dataNascimentoCadastroPessoa.SelectedDate = new DateTime(1985,01,01);
         }
+        #endregion
 
+        #region CadastroDePessoa
         private void CadastroDePessoa(object sender, RoutedEventArgs e)
         {
            
@@ -38,18 +41,18 @@ namespace ProCasal
 
             }
         }
+        #endregion
+
+        #region LimparCampos
 
         private void LimparCampos(object sender, RoutedEventArgs e)
-        {
-            LimparCamposCadastroPessoa();
-        }
-
-        public void LimparCamposCadastroPessoa()
         {
             nomeCadastroPessoa.Text = "";
             sobreNomeCadastroPessoa.Text = "";
             dataNascimentoCadastroPessoa.Text = "";
             sexoCadastroPessoa.Text = "";
         }
+        #endregion
+
     }
 }
