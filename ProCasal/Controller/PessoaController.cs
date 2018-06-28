@@ -50,12 +50,12 @@ namespace Controller
 
         #region ValidacaoLogin
 
-        public List<Pessoa> ValidacaoLogin(string ID, string nome)
+        public Pessoa ValidacaoLogin(string ID, string nome)
         {
             try
             {
                 int IDPesquisa = Convert.ToInt32(ID);
-                return context.dBpessoa.Where(a => a.IdPessoa == IDPesquisa && a.Nome == nome).ToList();
+                return context.dBpessoa.Where(a => a.IdPessoa == IDPesquisa && a.Nome == nome).FirstOrDefault();
             }
             catch (Exception)
             {
