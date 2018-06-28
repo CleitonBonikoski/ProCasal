@@ -18,9 +18,10 @@ namespace Controller
 
             pessoa.IdPessoa = 1;
             pessoa.Nome = "Teste";
-            pessoa.SobreNome = "Silva";
-            pessoa.DataNasc = "20/08/1992";
-            pessoa.Sexo = "Masculino";
+            pessoa.SobreNome = "Teste";
+            string dataAtual = Convert.ToString(DateTime.Today);
+            pessoa.DataNasc = dataAtual;
+            pessoa.Sexo = " M - F ";
 
             context.dBpessoa.Add(pessoa);
             context.SaveChanges();
@@ -59,7 +60,7 @@ namespace Controller
             }
             catch (Exception)
             {
-                throw;
+                return null;                
             }
         }
 
