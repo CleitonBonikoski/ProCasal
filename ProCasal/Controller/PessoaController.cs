@@ -1,5 +1,7 @@
 ﻿using Model;
+using System;
 using System.Collections.Generic;
+using System.Linq;
 
 namespace Controller
 {
@@ -48,19 +50,20 @@ namespace Controller
 
         #region ValidacaoLogin
 
-        public bool ValidacaoLogin(string nome, string sobreNome)
-        {            
-            foreach (var item in lstPessoas)
+        public List<Pessoa> ValidacaoLogin(string ID, string nome)
+        {
+            try
             {
-                if(item.Nome.Equals(nome) && item.SobreNome.Equals(sobreNome))
-                {
-                    return true;
-                }                
+                int IDPesquisa = Convert.ToInt32(ID);
+                return context.dBpessoa.Where(a => a.IdPessoa == IDPesquisa && a.Nome == nome).ToList();
             }
-            return false;            
+            catch (Exception)
+            {
+                throw;
+            }
         }
 
         #endregion
-        
+
     }
 }
