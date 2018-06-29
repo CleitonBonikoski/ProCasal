@@ -24,5 +24,12 @@ namespace ProCasal
             InitializeComponent();
             diaEspecial.SelectedDate = Convert.ToDateTime(DateTime.Now.ToLongTimeString());
         }
+
+        private void LimparCamposCadastroMes(object sender, RoutedEventArgs e)
+        {
+            diaEspecial.Text = "";
+            txbLugarTop.Text = "";
+            NivelFelicidade.Text = "";            
+        }
     }
 }
