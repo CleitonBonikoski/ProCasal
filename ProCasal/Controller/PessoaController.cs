@@ -48,6 +48,14 @@ namespace Controller
             return pessoaSession.IdPessoa;
         }
 
+        public void AtualizarPessoa(Pessoa pessoa)
+        {
+            context.Entry(pessoa).State =
+            System.Data.Entity.EntityState.Modified;
+
+            context.SaveChanges();
+        }
+
         #endregion
 
         #region BuscarPessoa
@@ -92,6 +100,12 @@ namespace Controller
                 return null;
             }
         }
+
+        #endregion
+
+        #region UpDate Pessoa
+
+
 
         #endregion
     }

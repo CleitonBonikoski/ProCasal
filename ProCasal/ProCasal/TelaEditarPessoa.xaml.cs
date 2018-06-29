@@ -1,4 +1,5 @@
-﻿using Model;
+﻿using Controller;
+using Model;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -35,8 +36,19 @@ namespace ProCasal
 
         private void EditarPessoa(object sender, RoutedEventArgs e)
         {
-            txbNomePessoa.Text = "oi";
+            PessoaController pessoaController = new PessoaController();
+            Pessoa pessoa = new Pessoa();
+            
+            var usuario = Application.Current.Properties["_user"] as Pessoa;
 
+            pessoa.IdPessoa = usuario.IdPessoa;
+            pessoa.Nome = txbNomePessoa.Text;
+            pessoa.SobreNome = txbSobreNomePessoa.Text;
+            pessoa.DataNasc = txbDataNascimentoPessoa.Text;
+            pessoa.Sexo = txbSexoPessoa.Text;
+
+            pessoaController.AtualizarPessoa(pessoa);
+            
         }
 
         #region VoltarLogin
