@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Controller;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -30,9 +31,7 @@ namespace ProCasal
         #region Limpar Campos
         private void LimparCamposCadastroMes(object sender, RoutedEventArgs e)
         {
-            diaEspecial.Text = "";
-            txbLugarTop.Text = "";
-            NivelFelicidade.Text = "";            
+            LimparCampos();    
         }
         #endregion
 
@@ -47,6 +46,26 @@ namespace ProCasal
 
         #endregion
 
+        #region SalvarCamposMes
+        private void SalvarCamposCadastroMes(object sender, RoutedEventArgs e)
+        {
+            MesController mesController = new MesController();
+
+            mesController.CadastrarMes(Convert.ToString(diaEspecial.Text), Convert.ToString(txbLugarTop.Text), Convert.ToString(NivelFelicidade.Text));
+
+            LimparCampos();
+
+        }
+        #endregion
+
+        #region LimparCampos
+        private void LimparCampos()
+        {
+            diaEspecial.Text = "";
+            txbLugarTop.Text = "";
+            NivelFelicidade.Text = "";
+        }
+        #endregion
 
     }
 }
