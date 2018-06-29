@@ -1,4 +1,6 @@
-﻿using System;
+﻿using Controller;
+using Model;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -39,11 +41,33 @@ namespace ProCasal
 
         #endregion
 
+        #region btnLimpar_Click
         private void btnLimpar_Click(object sender, RoutedEventArgs e)
         {
             DataInicio.Text = "";
             PrimeiroEncontro.Text = "";
             Resumo.Text = "";
         }
+
+
+        #endregion
+
+        #region SalvarCasalnoBanco
+
+        private void SalvarCasalnoBanco(object sender, RoutedEventArgs e)
+        {
+            CasalController casalController = new CasalController();
+
+            var usuario = Application.Current.Properties["_user"] as Pessoa;
+            var usuarioB = Application.Current.Properties["_userB"] as Pessoa;
+
+            casalController.CadastrarCasal(DataInicio.Text, PrimeiroEncontro.Text, usuario.IdPessoa, usuarioB.IdPessoa, Resumo.Text);
+
+
+
+        }
+
+        #endregion
+
     }
 }

@@ -18,7 +18,8 @@
         <Label Content=" C a s a l "  Foreground="Purple" HorizontalAlignment="Left" Margin="207,326,0,0" VerticalAlignment="Top" FontWeight="Bold" FontStyle="Italic" FontSize="16" FontFamily="{DynamicResource {x:Static SystemFonts.IconFontFamilyKey}}"/>
         <TextBox Name="txbPessoaA" HorizontalAlignment="Left"  Background="Gray" Height="23" Margin="63,373,0,0" TextWrapping="Wrap" Text="PessoaA" VerticalAlignment="Top" Width="120"/>
         <TextBox Name="txbPessoaB" HorizontalAlignment="Left" Background="Gray" Height="23" Margin="308,373,0,0" TextWrapping="Wrap" Text="PessoaB" VerticalAlignment="Top" Width="120"/>
-        <Button Name="btnSalvarCasal" Content="Salvar Casal" HorizontalAlignment="Left" Margin="115,470,0,0" VerticalAlignment="Top" Width="75"/>
+        
+        <Button Name="btnSalvarCasal" Content="Salvar Casal" HorizontalAlignment="Left" Margin="115,470,0,0" VerticalAlignment="Top" Width="75" Click="SalvarCasalnoBanco"/>
         <Button Name="btnLimpar" Content="Limpar" HorizontalAlignment="Left" Margin="292,470,0,0" VerticalAlignment="Top" Width="75" Click="btnLimpar_Click"/>
         <Button Content="Ir Login" HorizontalAlignment="Left" Margin="428,10,0,0" VerticalAlignment="Top" Width="75" Click="VoltarLogin"/>
 

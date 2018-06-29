@@ -28,7 +28,7 @@ namespace ProCasal
         }
         #endregion
 
-        #region Limpar Campos
+        #region Limpar Campo
         private void LimparCamposCadastroMes(object sender, RoutedEventArgs e)
         {
             LimparCampos();    

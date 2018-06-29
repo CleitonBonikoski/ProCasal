@@ -5,11 +5,26 @@ namespace Controller
 {
     public class CasalController
     {
-        Casal casal = new Casal();
+        private Context context = new Context();
 
-        public CasalController()
+        #region CadastrarCasal
+
+        public void CadastrarCasal(string dataInicio, string primeiroEncontro,int idPessoaA, int idPessoaB, string resumo)
         {
-        
+            Casal casal = new Casal();
+
+            casal.DataInicio = dataInicio;
+            casal.PrimeiroEncontro = primeiroEncontro;
+            casal.MesAtual = DateTime.Now.ToLongTimeString();
+            casal.idPessoaA = 1;
+            casal.idPessoaB = 2;
+            casal.Resumo = resumo;
+
+            context.dBcasal.Add(casal);
+            context.SaveChanges();
+
         }
+
+        #endregion
     }
 }
