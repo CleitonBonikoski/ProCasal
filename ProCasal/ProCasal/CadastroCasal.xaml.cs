@@ -29,6 +29,12 @@ namespace ProCasal
             var usuario = Application.Current.Properties["_user"] as Pessoa;
             var usuarioB = Application.Current.Properties["_userB"] as Pessoa;
 
+            if(usuario == null)
+            {
+                usuario = usuarioB;
+                usuarioB = null;
+            }
+
             #region Mostrar campos PessoaA
             if (usuario.IdPessoa>0)
             {
@@ -64,22 +70,22 @@ namespace ProCasal
             #endregion
 
             #region Mostrar campos PessoaB
-            if (usuarioB.IdPessoa > 0)
+            if (usuarioB != null)
             {
                 IdPessoaB.Visibility = Visibility;
-                IdPessoaB.Text = Convert.ToString(usuario.IdPessoa);
+                IdPessoaB.Text = Convert.ToString(usuarioB.IdPessoa);
 
                 nomePessoaB.Visibility = Visibility;
-                nomePessoaB.Text = usuario.Nome;
+                nomePessoaB.Text = usuarioB.Nome;
 
                 sobreNomePessoaB.Visibility = Visibility;
-                sobreNomePessoaB.Text = usuario.SobreNome;
+                sobreNomePessoaB.Text = usuarioB.SobreNome;
 
                 dataNascimentoPessoaB.Visibility = Visibility;
-                dataNascimentoPessoaB.Text = usuario.DataNasc;
+                dataNascimentoPessoaB.Text = usuarioB.DataNasc;
 
                 sexoPessoaB.Visibility = Visibility;
-                sexoPessoaB.Text = usuario.Sexo;
+                sexoPessoaB.Text = usuarioB.Sexo;
 
                 ValidaSexo();
 

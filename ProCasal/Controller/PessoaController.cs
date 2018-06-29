@@ -34,8 +34,7 @@ namespace Controller
         {
             Pessoa pessoaAtual = new Pessoa();
             Pessoa pessoaSession = new Pessoa();
-
-
+            
             pessoaAtual.Nome = nome;
             pessoaAtual.SobreNome = sobreNome;
             pessoaAtual.DataNasc = dataNasc;
