@@ -29,14 +29,8 @@ namespace ProCasal
             var usuario = Application.Current.Properties["_user"] as Pessoa;
             var usuarioB = Application.Current.Properties["_userB"] as Pessoa;
 
-            if(usuario == null)
-            {
-                usuario = usuarioB;
-                usuarioB = null;
-            }
-
             #region Mostrar campos PessoaA
-            if (usuario.IdPessoa>0)
+            if (usuario != null)
             {
                 #region Mostrar Campos de Identificacao
 
@@ -47,7 +41,7 @@ namespace ProCasal
                 lbsexo.Visibility = Visibility;
 
                 #endregion
-                
+
                 IdPessoaA.Visibility = Visibility;
                 IdPessoaA.Text = Convert.ToString(usuario.IdPessoa);
 
@@ -89,13 +83,16 @@ namespace ProCasal
 
                 ValidaSexo();
 
+                btnMostrarCampos.Visibility = Visibility.Hidden;
+
             }
-            else
+
+            #endregion
+
+            if (usuario == null || usuarioB == null)
             {
                 btnCadastrarPessoa.Visibility = Visibility;
             }
-            #endregion
-
         }
 
         #endregion

@@ -27,9 +27,17 @@ namespace ProCasal
             if (!nomeCadastroPessoa.Text.Equals("") && !sobreNomeCadastroPessoa.Text.Equals("") && !sexoCadastroPessoa.Text.Equals(""))
             {
                 int idSession = pessoaController.CadastrarPessoa(nomeCadastroPessoa.Text, sobreNomeCadastroPessoa.Text, dataNascimentoCadastroPessoa.Text, sexoCadastroPessoa.Text);
-                
-                Application.Current.Properties["_userB"] = pessoaController.pessoaSession(Convert.ToString(idSession));
-                
+                if (Application.Current.Properties["_userB"] == null)
+                {
+                    Application.Current.Properties["_userB"] = pessoaController.pessoaSession(Convert.ToString(idSession));
+
+                }
+                else
+                {
+                    Application.Current.Properties["_user"] = pessoaController.pessoaSession(Convert.ToString(idSession));
+
+                }
+
 
                 CadastroCasal cadastroCasal = new CadastroCasal();
                 cadastroCasal.Show();                
