@@ -5,8 +5,32 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:ProCasal"
         mc:Ignorable="d"
-        Title="CadastroMes" Height="450" Width="800">
+        Title="CadastroMes" Height="450" Width="514.634">
     <Grid>
-        
+        <Grid Background="Gray">
+            <Label Content="Adicionando Mes de Relacionamento :D" HorizontalAlignment="Left" Foreground="Purple" Margin="64,23,0,0" VerticalAlignment="Top" FontSize="16" FontWeight="Bold" FontStyle="Italic"/>
+            <Label Content="Informe um Dia que foi especial : " HorizontalAlignment="Left" Foreground="Silver" Margin="92,59,0,0" VerticalAlignment="Top" FontSize="16" FontWeight="Bold" FontStyle="Italic"/>
+            <DatePicker Name="diaEspecial"  Background="LightGray" HorizontalAlignment="Left" Margin="113,95,0,0" VerticalAlignment="Top" Width="214" Height="24"/>
+            <Label Content="Informe o Lugar Top do Mes" HorizontalAlignment="Left" Foreground="Silver" Margin="124,159,0,0" VerticalAlignment="Top" FontSize="16" FontWeight="Bold" FontStyle="Italic"/>
+            <TextBox HorizontalAlignment="Left" MaxLength="100" Background="Gray" Foreground="Purple" Height="23" Margin="129,199,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="205" RenderTransformOrigin="0.5,0.5">
+                <TextBox.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform/>
+                        <SkewTransform/>
+                        <RotateTransform Angle="-0.588"/>
+                        <TranslateTransform/>
+                    </TransformGroup>
+                </TextBox.RenderTransform>
+            </TextBox>
+            <Label Content="Informe Sua Felicidade" HorizontalAlignment="Left" Foreground="Silver" Margin="145,267,0,0" VerticalAlignment="Top" FontSize="16" FontWeight="Bold" FontStyle="Italic"/>
+            
+            <ComboBox Name="sexoCadastroPessoa" Background="LightGray" HorizontalAlignment="Left" Margin="157,315,0,0" VerticalAlignment="Top" Width="170" Height="22" FontStyle="Italic">
+                <ComboBoxItem Name="CBKBaixo" Background="LightGray">BAIXO</ComboBoxItem>
+                <ComboBoxItem Name="CBKMedio" Background="LightGray" >MEDIO</ComboBoxItem>
+                <ComboBoxItem Name="CBKAlto" Background="LightGray" >ALTO</ComboBoxItem>
+            </ComboBox>
+            
+        </Grid>
+
     </Grid>
 </Window>

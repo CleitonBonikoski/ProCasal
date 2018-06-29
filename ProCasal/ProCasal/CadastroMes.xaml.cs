@@ -22,6 +22,7 @@ namespace ProCasal
         public CadastroMes()
         {
             InitializeComponent();
+            diaEspecial.SelectedDate = Convert.ToDateTime(DateTime.Now.ToLongTimeString());
         }
     }
 }
