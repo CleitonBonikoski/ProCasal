@@ -37,7 +37,9 @@ namespace ProCasal
 
         private void MostrarPessoaCadastrada(object sender, RoutedEventArgs e)
         {
-
+            MostrarPessoa mostrarPessoa = new MostrarPessoa();
+            mostrarPessoa.Show();
+            Close();
         }
 
         private void ExcluirPessoaCadastrada(object sender, RoutedEventArgs e)

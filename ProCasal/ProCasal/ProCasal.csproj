@@ -70,6 +70,9 @@
     <Compile Include="CadastroCasal.xaml.cs">
       <DependentUpon>CadastroCasal.xaml</DependentUpon>
     </Compile>
+    <Compile Include="MostrarPessoa.xaml.cs">
+      <DependentUpon>MostrarPessoa.xaml</DependentUpon>
+    </Compile>
     <Compile Include="SalvarCasal.xaml.cs">
       <DependentUpon>SalvarCasal.xaml</DependentUpon>
     </Compile>
@@ -97,6 +100,10 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="CadastroCasal.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="MostrarPessoa.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
