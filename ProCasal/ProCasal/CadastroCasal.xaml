@@ -30,6 +30,7 @@
         <Label Name="lbdataNasc" Content="Nascimento  " Visibility="Hidden" HorizontalAlignment="Left" Margin="178,198,0,0" VerticalAlignment="Top" FontWeight="Bold" FontSize="16"/>
         <Label Name="lbsexo" Content="Sexo" Visibility="Hidden" HorizontalAlignment="Left" Margin="203,252,0,0" VerticalAlignment="Top" FontWeight="Bold" FontSize="16"/>
         <Button Name="btnSalvarCasal" Content="Salvar Casal" HorizontalAlignment="Left" Margin="21,373,0,0" VerticalAlignment="Top" Width="75" Click="OpenSalvarCasal" />
+        <Button Name="btnOutros" Content="Outros" HorizontalAlignment="Left" Margin="422,379,0,0" VerticalAlignment="Top" Width="75" Click="VisualizarOutros"/>
 
     </Grid>
 </Window>

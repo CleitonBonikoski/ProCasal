@@ -1,0 +1,24 @@
+﻿<Window x:Class="ProCasal.TelaOutros"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ProCasal"
+        mc:Ignorable="d"
+        Title="TelaOutros" Height="286.585" Width="568.293">
+    <Grid>
+        <Grid Background="Gray" HorizontalAlignment="Left" Width="560" Height="257" VerticalAlignment="Top">
+            <Label Content="CRUD Pessoa" HorizontalAlignment="Left" Foreground="Purple" Margin="214,10,0,0" VerticalAlignment="Top" FontSize="16" FontWeight="Bold" FontStyle="Italic"/>
+            <Button Name="EditarPessoa" Content="Editar Pessoa" HorizontalAlignment="Left" Margin="214,139,0,0" VerticalAlignment="Top" Width="101" Click="MostrarPessoaCadastrada"/>
+            <Button Name="ExcluirPessoa" Content="Excluir Pessoa" HorizontalAlignment="Left" Margin="36,139,0,0" VerticalAlignment="Top" Width="101" Click="ExcluirPessoaCadastrada"/>
+            <Button Name="MostrarPessoa"  Content="Mostrar Pessoa" HorizontalAlignment="Left" Margin="407,139,0,0" VerticalAlignment="Top" Width="104" Click="MostrarPessoaCadastrada"/>
+
+            <Label Content="Editar Seus Dados" HorizontalAlignment="Left" Foreground="Silver" Margin="198,84,0,0" VerticalAlignment="Top" FontSize="16" FontWeight="Bold" FontStyle="Italic" Height="36" Width="157"/>
+            <Label Content="Excluir Conta" HorizontalAlignment="Left" Foreground="Silver" Margin="36,84,0,0" VerticalAlignment="Top" FontSize="16" FontWeight="Bold" FontStyle="Italic" Height="36" Width="157"/>
+            <Label Content="Mostra Seus Dados" HorizontalAlignment="Left" Foreground="Silver" Margin="390,84,0,0" VerticalAlignment="Top" FontSize="16" FontWeight="Bold" FontStyle="Italic" Height="36" Width="157"/>
+
+
+        </Grid>
+
+    </Grid>
+</Window>

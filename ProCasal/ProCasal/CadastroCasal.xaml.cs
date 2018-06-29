@@ -177,5 +177,18 @@ namespace ProCasal
 
         #endregion
 
+        #region VisualizarTelaOutros
+
+        private void VisualizarOutros(object sender, RoutedEventArgs e)
+        {
+            TelaOutros telaOutros = new TelaOutros();
+            telaOutros.Show();
+
+            Close();
+
+        }
+
+        #endregion
+
     }
 }
