@@ -61,12 +61,19 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="CadastroMes.xaml.cs">
+      <DependentUpon>CadastroMes.xaml</DependentUpon>
+    </Compile>
     <Compile Include="CadastroPessoa.xaml.cs">
       <DependentUpon>CadastroPessoa.xaml</DependentUpon>
     </Compile>
     <Compile Include="CadastroCasal.xaml.cs">
       <DependentUpon>CadastroCasal.xaml</DependentUpon>
     </Compile>
+    <Page Include="CadastroMes.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>

@@ -151,8 +151,15 @@ namespace ProCasal
 
 
 
+
         #endregion
 
+        private void AddMes(object sender, RoutedEventArgs e)
+        {
+            CadastroMes cadastroMes = new CadastroMes();
+            cadastroMes.Show();
 
+            Close();
+        }
     }
 }
