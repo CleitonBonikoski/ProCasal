@@ -154,6 +154,8 @@ namespace ProCasal
 
         #endregion
 
+        #region Abrir Mes
+        
         private void AddMes(object sender, RoutedEventArgs e)
         {
             CadastroMes cadastroMes = new CadastroMes();
@@ -161,5 +163,19 @@ namespace ProCasal
 
             Close();
         }
+
+        #endregion
+
+        #region Abrir SalvarCasal
+
+        private void OpenSalvarCasal(object sender, RoutedEventArgs e)
+        {
+            SalvarCasal salvarCasal = new SalvarCasal();
+            salvarCasal.Show();
+            Close();
+        }
+
+        #endregion
+
     }
 }

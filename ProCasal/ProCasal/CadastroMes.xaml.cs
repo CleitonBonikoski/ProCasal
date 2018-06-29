@@ -53,7 +53,10 @@ namespace ProCasal
 
             mesController.CadastrarMes(Convert.ToString(diaEspecial.Text), Convert.ToString(txbLugarTop.Text), Convert.ToString(NivelFelicidade.Text));
 
-            LimparCampos();
+            CadastroCasal cadastroCasal = new CadastroCasal();
+            cadastroCasal.Show();
+
+            Close();
 
         }
         #endregion

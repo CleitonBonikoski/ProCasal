@@ -1,0 +1,28 @@
+﻿<Window x:Class="ProCasal.SalvarCasal"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ProCasal"
+        mc:Ignorable="d"
+        Title="SalvarCasal" Height="567.074" Width="532.926">
+
+    <Grid Background="Gray" Margin="0,0,-8,0" RenderTransformOrigin="0.513,0.498">
+        <Label Content="Adicionando Casal :D" HorizontalAlignment="Left" Foreground="Purple" Margin="181,24,0,0" VerticalAlignment="Top" FontSize="16" FontWeight="Bold" FontStyle="Italic"/>
+        <Label Content="Informe o Inicio do Relacionamento : " HorizontalAlignment="Left" Foreground="Silver" Margin="115,60,0,0" VerticalAlignment="Top" FontSize="16" FontWeight="Bold" FontStyle="Italic"/>
+        <DatePicker Name="DataInicio"  Background="LightGray" HorizontalAlignment="Left" Margin="153,96,0,0" VerticalAlignment="Top" Width="214" Height="24"/>
+        <Label Content="Descreva o Primeiro Encontro : " HorizontalAlignment="Left" Foreground="Silver" Margin="137,136,0,0" VerticalAlignment="Top" FontSize="16" FontWeight="Bold" FontStyle="Italic"/>
+        <TextBox Name="PrimeiroEncontro" HorizontalAlignment="Left" Height="43" Margin="30,172,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="473"/>
+        <Label Content="Como voce se Sente ? " HorizontalAlignment="Left" Foreground="Silver" Margin="170,231,0,0" VerticalAlignment="Top" FontSize="16" FontWeight="Bold" FontStyle="Italic"/>
+        <TextBox Name="Resumo" HorizontalAlignment="Left" Height="43" Margin="30,267,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="473"/>
+        <Label Content=" C a s a l "  Foreground="Purple" HorizontalAlignment="Left" Margin="207,326,0,0" VerticalAlignment="Top" FontWeight="Bold" FontStyle="Italic" FontSize="16" FontFamily="{DynamicResource {x:Static SystemFonts.IconFontFamilyKey}}"/>
+        <TextBox Name="txbPessoaA" HorizontalAlignment="Left"  Background="Gray" Height="23" Margin="63,373,0,0" TextWrapping="Wrap" Text="PessoaA" VerticalAlignment="Top" Width="120"/>
+        <TextBox Name="txbPessoaB" HorizontalAlignment="Left" Background="Gray" Height="23" Margin="308,373,0,0" TextWrapping="Wrap" Text="PessoaB" VerticalAlignment="Top" Width="120"/>
+        <Button Name="btnSalvarCasal" Content="Salvar Casal" HorizontalAlignment="Left" Margin="115,470,0,0" VerticalAlignment="Top" Width="75"/>
+        <Button Name="btnLimpar" Content="Limpar" HorizontalAlignment="Left" Margin="292,470,0,0" VerticalAlignment="Top" Width="75" Click="btnLimpar_Click"/>
+        <Button Content="Ir Login" HorizontalAlignment="Left" Margin="428,10,0,0" VerticalAlignment="Top" Width="75" Click="VoltarLogin"/>
+
+
+    </Grid>
+
+</Window>

@@ -70,6 +70,9 @@
     <Compile Include="CadastroCasal.xaml.cs">
       <DependentUpon>CadastroCasal.xaml</DependentUpon>
     </Compile>
+    <Compile Include="SalvarCasal.xaml.cs">
+      <DependentUpon>SalvarCasal.xaml</DependentUpon>
+    </Compile>
     <Page Include="CadastroMes.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -91,6 +94,10 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="CadastroCasal.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="SalvarCasal.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
