@@ -5,27 +5,24 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:ProCasal"
         mc:Ignorable="d"
-        Title="TelaEditarPessoa" Height="392.683" Width="542.683">
+        Title="TelaEditarPessoa" Height="353.659" Width="557.317">
     <Grid>
-        <Grid Background="Gray" HorizontalAlignment="Left" Width="535" Height="363" VerticalAlignment="Top">
+        <Grid Background="Gray" HorizontalAlignment="Left" Width="549" Height="324" VerticalAlignment="Top">
             <Label Content="Mostrar Pessoa" HorizontalAlignment="Left" Foreground="Purple" Margin="214,10,0,0" VerticalAlignment="Top" FontSize="16" FontWeight="Bold" FontStyle="Italic"/>
-            
+
             <Button Content="Ir Login" HorizontalAlignment="Left" Margin="460,16,0,0" VerticalAlignment="Top" Width="75" Click="VoltarLogin"/>
+            <Label Name="lblNome_FIXO" Content="Seu Nome é : " HorizontalAlignment="Left" Foreground="Silver" Margin="152,55,0,0" VerticalAlignment="Top" FontSize="16" FontWeight="Bold" FontStyle="Italic" Height="36" Width="170"/>
+            <Label Name="lblSobreNome_FIXO" Content="Seu Sobrenome é :" HorizontalAlignment="Left" Foreground="Silver" Margin="114,91,0,0" VerticalAlignment="Top" FontSize="16" FontWeight="Bold" FontStyle="Italic" Height="36" Width="170"/>
+            <Label Name="lblDataNascimento_FIXO" Content="Sua Data de Nascimento : " HorizontalAlignment="Left" Foreground="Silver" Margin="60,127,0,0" VerticalAlignment="Top" FontSize="16" FontWeight="Bold" FontStyle="Italic" Height="36" Width="201"/>
+            <Label Name="lblSexo_FIXO" Content="Voce é " HorizontalAlignment="Left" Foreground="Silver" Margin="198,168,0,0" VerticalAlignment="Top" FontSize="16" FontWeight="Bold" FontStyle="Italic" Height="36" Width="66"/>
+            
+            <TextBox Name="txbNomePessoa" Text="Nome" Background="Gray"  HorizontalAlignment="Left" Height="23" Margin="277,61,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="120"/>
+            <TextBox Name="txbSobreNomePessoa" Text="Sobrenome" Background="Gray"  HorizontalAlignment="Left" Height="23" Margin="277,97,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="120"/>
+            <TextBox Name="txbDataNascimentoPessoa" Text="Data" Background="Gray"  HorizontalAlignment="Left" Height="23" Margin="277,133,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="120"/>
+            <TextBox Name="txbSexoPessoa" Text="Sexo" Background="Gray"  HorizontalAlignment="Left" Height="23" Margin="277,174,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="120"/>
 
-            <Label Name="lblID_FIXO" Content="Seu ID é : " HorizontalAlignment="Left" Foreground="Silver" Margin="181,62,0,0" VerticalAlignment="Top" FontSize="16" FontWeight="Bold" FontStyle="Italic" Height="36" Width="170"/>
-            <Label Name="lblNome_FIXO" Content="Seu Nome é : " HorizontalAlignment="Left" Foreground="Silver" Margin="154,103,0,0" VerticalAlignment="Top" FontSize="16" FontWeight="Bold" FontStyle="Italic" Height="36" Width="170"/>
-            <Label Name="lblSobreNome_FIXO" Content="Seu Sobrenome é :" HorizontalAlignment="Left" Foreground="Silver" Margin="116,139,0,0" VerticalAlignment="Top" FontSize="16" FontWeight="Bold" FontStyle="Italic" Height="36" Width="170"/>
-            <Label Name="lblDataNascimento_FIXO" Content="Sua Data de Nascimento : " HorizontalAlignment="Left" Foreground="Silver" Margin="62,175,0,0" VerticalAlignment="Top" FontSize="16" FontWeight="Bold" FontStyle="Italic" Height="36" Width="201"/>
-            <Label Name="lblSexo_FIXO" Content="Voce é " HorizontalAlignment="Left" Foreground="Silver" Margin="200,216,0,0" VerticalAlignment="Top" FontSize="16" FontWeight="Bold" FontStyle="Italic" Height="36" Width="66"/>
-
-            <TextBox Name="txbIDPessoa" Text="ID" Background="Gray"  HorizontalAlignment="Left" Height="23" Margin="279,68,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="120"/>
-            <TextBox Name="txbNomePessoa" Text="Nome" Background="Gray"  HorizontalAlignment="Left" Height="23" Margin="279,109,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="120"/>
-            <TextBox Name="txbSobreNomePessoa" Text="Sobrenome" Background="Gray"  HorizontalAlignment="Left" Height="23" Margin="279,145,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="120"/>
-            <TextBox Name="txbDataNascimentoPessoa" Text="Data" Background="Gray"  HorizontalAlignment="Left" Height="23" Margin="279,181,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="120"/>
-            <TextBox Name="txbSexoPessoa" Text="Sexo" Background="Gray"  HorizontalAlignment="Left" Height="23" Margin="279,222,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="120"/>
-
-            <Button Content="Salvar" HorizontalAlignment="Left" Margin="200,294,0,0" VerticalAlignment="Top" Width="75" Click="EditarPessoa"/>
-            <Button Content="Voltar" HorizontalAlignment="Left" Margin="294,294,0,0" VerticalAlignment="Top" Width="75" Click="VoltarTelaOutros"/>
+            <Button Content="Salvar" HorizontalAlignment="Left" Margin="198,246,0,0" VerticalAlignment="Top" Width="75" Click="EditarPessoa"/>
+            <Button Content="Voltar" HorizontalAlignment="Left" Margin="292,246,0,0" VerticalAlignment="Top" Width="75" Click="VoltarTelaOutros"/>
 
 
         </Grid>

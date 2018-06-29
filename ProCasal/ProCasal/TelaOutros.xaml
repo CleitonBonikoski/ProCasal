@@ -9,7 +9,7 @@
     <Grid>
         <Grid Background="Gray" HorizontalAlignment="Left" Width="560" Height="257" VerticalAlignment="Top">
             <Label Content="CRUD Pessoa" HorizontalAlignment="Left" Foreground="Purple" Margin="214,10,0,0" VerticalAlignment="Top" FontSize="16" FontWeight="Bold" FontStyle="Italic"/>
-            <Button Name="EditarPessoa" Content="Editar Pessoa" HorizontalAlignment="Left" Margin="214,139,0,0" VerticalAlignment="Top" Width="101" Click="MostrarPessoaCadastrada"/>
+            <Button Name="EditarPessoa" Content="Editar Pessoa" HorizontalAlignment="Left" Margin="214,139,0,0" VerticalAlignment="Top" Width="101" Click="EditarPessoaCadastrada"/>
             <Button Name="ExcluirPessoa" Content="Excluir Pessoa" HorizontalAlignment="Left" Margin="36,139,0,0" VerticalAlignment="Top" Width="101" Click="ExcluirPessoaCadastrada"/>
             <Button Name="MostrarPessoa"  Content="Mostrar Pessoa" HorizontalAlignment="Left" Margin="407,139,0,0" VerticalAlignment="Top" Width="104" Click="MostrarPessoaCadastrada"/>
 

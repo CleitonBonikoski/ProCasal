@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Model;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -22,11 +23,41 @@ namespace ProCasal
         public TelaEditarPessoa()
         {
             InitializeComponent();
+
+            var usuario = Application.Current.Properties["_user"] as Pessoa;
+
+            txbNomePessoa.Text = usuario.Nome;
+            txbSobreNomePessoa.Text = usuario.SobreNome;
+            txbDataNascimentoPessoa.Text = usuario.DataNasc;
+            txbSexoPessoa.Text = usuario.Sexo;
+
         }
 
         private void EditarPessoa(object sender, RoutedEventArgs e)
         {
+            txbNomePessoa.Text = "oi";
 
         }
+
+        #region VoltarLogin
+
+        private void VoltarLogin(object sender, RoutedEventArgs e)
+        {
+            MainWindow login = new MainWindow();
+            login.Show();
+            Close();
+        }
+
+        #endregion
+
+        #region Voltar TelaOutros
+        private void VoltarTelaOutros(object sender, RoutedEventArgs e)
+        {
+            TelaOutros telaOutros = new TelaOutros();
+            telaOutros.Show();
+            Close();
+        }
+
+        #endregion
     }
 }

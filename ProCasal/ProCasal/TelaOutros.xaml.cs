@@ -20,31 +20,39 @@ namespace ProCasal
     /// </summary>
     public partial class TelaOutros : Window
     {
+        #region TelaOutros
         public TelaOutros()
         {
             InitializeComponent();
         }
+        #endregion
 
-
+        #region Editar
         private void EditarPessoaCadastrada(object sender, RoutedEventArgs e)
         {
-            var usuario = Application.Current.Properties["_user"] as Pessoa;
+            TelaEditarPessoa editarPessoa = new TelaEditarPessoa();
+            editarPessoa.Show();
 
-            Pessoa pessoa = new Pessoa();
-            
+            Close();
 
         }
+        #endregion
 
+        #region Mostrar
         private void MostrarPessoaCadastrada(object sender, RoutedEventArgs e)
         {
             MostrarPessoa mostrarPessoa = new MostrarPessoa();
             mostrarPessoa.Show();
             Close();
         }
+        #endregion
 
+        #region Excluir
         private void ExcluirPessoaCadastrada(object sender, RoutedEventArgs e)
         {
 
         }
+        #endregion
+
     }
 }
