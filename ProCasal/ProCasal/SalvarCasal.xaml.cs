@@ -26,6 +26,13 @@ namespace ProCasal
         public SalvarCasal()
         {
             InitializeComponent();
+
+            var usuario = Application.Current.Properties["_user"] as Pessoa;
+            var usuarioB = Application.Current.Properties["_userB"] as Pessoa;
+
+            txbPessoaA.Text = usuario.Nome;
+            txbPessoaB.Text = usuarioB.Nome;
+
         }
 
         #endregion
@@ -54,7 +61,7 @@ namespace ProCasal
 
         #region SalvarCasalnoBanco
 
-        private void SalvarCasalnoBanco(object sender, RoutedEventArgs e)
+        public void SalvarCasalnoBanco(object sender, RoutedEventArgs e)
         {
             CasalController casalController = new CasalController();
 
@@ -63,7 +70,11 @@ namespace ProCasal
 
             casalController.CadastrarCasal(DataInicio.Text, PrimeiroEncontro.Text, usuario.IdPessoa, usuarioB.IdPessoa, Resumo.Text);
 
+            CadastroCasal cadastroCasal = new CadastroCasal();
 
+            cadastroCasal.Show();
+
+            Close();
 
         }
 

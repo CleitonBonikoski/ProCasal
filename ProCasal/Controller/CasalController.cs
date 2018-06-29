@@ -15,9 +15,9 @@ namespace Controller
 
             casal.DataInicio = dataInicio;
             casal.PrimeiroEncontro = primeiroEncontro;
-            casal.MesAtual = DateTime.Now.ToLongTimeString();
-            casal.idPessoaA = 1;
-            casal.idPessoaB = 2;
+            casal.MesAtual = Convert.ToString(DateTime.Today);
+            casal.idPessoaA = idPessoaA;
+            casal.idPessoaB = idPessoaB;
             casal.Resumo = resumo;
 
             context.dBcasal.Add(casal);
