@@ -17,17 +17,68 @@ namespace ProCasal
         public CadastroCasal()
         {
             InitializeComponent();
-
         }
 
         #endregion
 
         #region SetParmCadastro
-        public void SetParmCadastro()
+        private void SetParmCadastro(object sender, RoutedEventArgs e)
         {
             var usuario = Application.Current.Properties["_user"] as Pessoa;
-            IdPessoaA.Text = Convert.ToString(usuario.IdPessoa);
-            txbPessoaA.Text = usuario.Nome;
+
+            #region Mostrar campos PessoaA
+            if (usuario.IdPessoa>0)
+            {
+                #region Mostrar Campos de Identificacao
+
+                lbId.Visibility = Visibility;
+                lbnome.Visibility = Visibility;
+                lbsobreNome.Visibility = Visibility;
+                lbdataNasc.Visibility = Visibility;
+                lbsexo.Visibility = Visibility;
+
+                #endregion
+                
+                IdPessoaA.Visibility = Visibility;
+                IdPessoaA.Text = Convert.ToString(usuario.IdPessoa);
+
+                nomePessoaA.Visibility = Visibility;
+                nomePessoaA.Text = usuario.Nome;
+
+                sobreNomePessoaA.Visibility = Visibility;
+                sobreNomePessoaA.Text = usuario.SobreNome;
+
+                dataNascimentoPessoaA.Visibility = Visibility;
+                dataNascimentoPessoaA.Text = usuario.DataNasc;
+
+                sexoPessoaA.Visibility = Visibility;
+                sexoPessoaA.Text = usuario.Sexo;
+
+                btnMostrarCampos.Visibility = Visibility.Hidden;
+            }
+            #endregion
+
+            #region Mostrar campos PessoaB
+            if (usuario.IdPessoa > 0)
+            {
+                IdPessoaB.Visibility = Visibility;
+                IdPessoaB.Text = Convert.ToString(usuario.IdPessoa);
+
+                nomePessoaB.Visibility = Visibility;
+                nomePessoaB.Text = usuario.Nome;
+
+                sobreNomePessoaB.Visibility = Visibility;
+                sobreNomePessoaB.Text = usuario.SobreNome;
+
+                dataNascimentoPessoaB.Visibility = Visibility;
+                dataNascimentoPessoaB.Text = usuario.DataNasc;
+
+                sexoPessoaB.Visibility = Visibility;
+                sexoPessoaB.Text = usuario.Sexo;
+
+            }
+            #endregion
+
         }
         #endregion
 
@@ -51,8 +102,9 @@ namespace ProCasal
             Close();
         }
 
-        #endregion
 
+
+        #endregion
 
 
     }

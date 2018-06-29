@@ -7,15 +7,27 @@
         mc:Ignorable="d"
         Title="Cadastro Casal" Height="450" Width="518.293">
     <Grid Background="Gray" Margin="0,0,2,0">
-        <Label Content="Casal" HorizontalAlignment="Left" Margin="42,48,0,0" VerticalAlignment="Top" Width="109" FontSize="16" FontWeight="Bold" FontStyle="Italic" d:IsLocked="True"/>
-        <TextBlock Name="IdPessoaA" Foreground="Green" HorizontalAlignment="Left" Margin="133,51,0,0" TextWrapping="Wrap" Text="Id Pessoa A" VerticalAlignment="Top" FontSize="18" FontWeight="Bold" FontStyle="Italic"/>
-        <TextBlock Name="txbPessoaA" Foreground="Green" HorizontalAlignment="Left" Margin="133,84,0,0" TextWrapping="Wrap" Text="Pessoa A" VerticalAlignment="Top" FontSize="18" FontWeight="Bold" FontStyle="Italic"/>
-        
-        <TextBlock Name="txbPessoaB" Foreground="Blue" HorizontalAlignment="Left" Margin="344,84,0,0" TextWrapping="Wrap" Text="Pessoa B" VerticalAlignment="Top" FontSize="18" FontWeight="Bold" FontStyle="Italic"/>
-        <TextBlock Name="IdPessoaB" Foreground="Blue" HorizontalAlignment="Left" Margin="344,48,0,0" TextWrapping="Wrap" Text="Id Pessoa B" VerticalAlignment="Top" FontSize="18" FontWeight="Bold" FontStyle="Italic"/>
+        <TextBlock Name="IdPessoaA" Foreground="Green" Visibility="Hidden" HorizontalAlignment="Left" Margin="30,57,0,0" TextWrapping="Wrap" Text="Id Pessoa A" VerticalAlignment="Top" FontSize="18" FontWeight="Bold" FontStyle="Italic"/>
+        <TextBlock Name="nomePessoaA" Foreground="Green" Visibility="Hidden"  HorizontalAlignment="Left" Margin="28,99,0,0" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="18" FontWeight="Bold" FontStyle="Italic"><Run Text="Nome"/><Run Text=" A"/></TextBlock>
+        <TextBlock Name="sobreNomePessoaA" Foreground="Green" Visibility="Hidden"  HorizontalAlignment="Left" Margin="28,149,0,0" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="18" FontWeight="Bold" FontStyle="Italic"><Run Text="Sobrenome"/><Run Text=" A"/></TextBlock>
+        <TextBlock Name="dataNascimentoPessoaA" Foreground="Green" Visibility="Hidden" HorizontalAlignment="Left" Margin="25,206,0,0" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="18" FontWeight="Bold" FontStyle="Italic"><Run Text="Data"/><Run Text=" A"/></TextBlock>
+        <TextBlock Name="sexoPessoaA" Foreground="Green" Visibility="Hidden" HorizontalAlignment="Left" Margin="26,259,0,0" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="18" FontWeight="Bold" FontStyle="Italic"><Run Text="Sexo"/><Run Text=" A"/></TextBlock>
 
-        <Button Content="Ir Login" HorizontalAlignment="Left" Margin="144,361,0,0" VerticalAlignment="Top" Width="75" Click="VoltarLogin"/>
-        <Button Content="Cadastrar Pessoa" HorizontalAlignment="Left" Margin="272,361,0,0" VerticalAlignment="Top" Width="118" Click="VoltarCadastroPessoa"/>
+        <TextBlock Name="IdPessoaB" Foreground="Green" Visibility="Hidden" HorizontalAlignment="Left" Margin="339,57,0,0" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="18" FontWeight="Bold" FontStyle="Italic"><Run Text="Id Pessoa "/><Run Text="B"/></TextBlock>
+        <TextBlock Name="nomePessoaB" Foreground="Green" Visibility="Hidden" HorizontalAlignment="Left" Margin="335,99,0,0" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="18" FontWeight="Bold" FontStyle="Italic"><Run Text="Nome"/><Run Text=" "/><Run Text="B"/></TextBlock>
+        <TextBlock Name="sobreNomePessoaB" Foreground="Green" Visibility="Hidden"  HorizontalAlignment="Left" Margin="335,149,0,0" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="18" FontWeight="Bold" FontStyle="Italic"><Run Text="Sobrenome"/><Run Text=" "/><Run Text="B"/></TextBlock>
+        <TextBlock Name="dataNascimentoPessoaB" Foreground="Green" Visibility="Hidden" HorizontalAlignment="Left" Margin="332,206,0,0" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="18" FontWeight="Bold" FontStyle="Italic"><Run Text="Data"/><Run Text=" "/><Run Text="B"/></TextBlock>
+        <TextBlock Name="sexoPessoaB" Foreground="Green" Visibility="Hidden" HorizontalAlignment="Left" Margin="333,259,0,0" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="18" FontWeight="Bold" FontStyle="Italic"><Run Text="Sexo"/><Run Text=" "/><Run Text="B"/></TextBlock>
 
+        <Button Content="Ir Login" HorizontalAlignment="Left" Margin="101,348,0,0" VerticalAlignment="Top" Width="75" Click="VoltarLogin"/>
+        <Button Content="Cadastrar Pessoa" HorizontalAlignment="Left" Margin="229,348,0,0" VerticalAlignment="Top" Width="118" Click="VoltarCadastroPessoa"/>
+        <Button Name="btnMostrarCampos" Content="Mostrar Dados" HorizontalAlignment="Left" Margin="178,10,0,0" VerticalAlignment="Top" Width="95" Click="SetParmCadastro"/>
+
+        <Label Name="lbId"  Content="ID " Visibility="Hidden" HorizontalAlignment="Left" Margin="211,50,0,0" VerticalAlignment="Top" FontWeight="Bold" FontSize="16"/>
+        <Label Name="lbnome" Content="Nome  " Visibility="Hidden" HorizontalAlignment="Left" Margin="196,92,0,0" VerticalAlignment="Top" FontWeight="Bold" FontSize="16"/>
+        <Label Name="lbsobreNome" Content="Sobrenome  " Visibility="Hidden" HorizontalAlignment="Left" Margin="181,140,0,0" VerticalAlignment="Top" FontWeight="Bold" FontSize="16"/>
+        <Label Name="lbdataNasc" Content="Nascimento  " Visibility="Hidden" HorizontalAlignment="Left" Margin="178,198,0,0" VerticalAlignment="Top" FontWeight="Bold" FontSize="16"/>
+        <Label Name="lbsexo" Content="Sexo" Visibility="Hidden" HorizontalAlignment="Left" Margin="203,252,0,0" VerticalAlignment="Top" FontWeight="Bold" FontSize="16"/>
+    
     </Grid>
 </Window>

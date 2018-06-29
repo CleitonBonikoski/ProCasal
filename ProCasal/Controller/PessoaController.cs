@@ -81,8 +81,17 @@ namespace Controller
 
         public Pessoa pessoaSession(string identificador)
         {
-            int identificadorP = Convert.ToInt32(identificador);
-            return context.dBpessoa.Where(p => p.IdPessoa == identificadorP).FirstOrDefault();
+            try
+            {
+                int identificadorP = Convert.ToInt32(identificador);
+                return context.dBpessoa.Where(p => p.IdPessoa == identificadorP).FirstOrDefault();
+
+            }
+            catch (Exception)
+            {
+
+                return null;
+            }
         }
 
         #endregion

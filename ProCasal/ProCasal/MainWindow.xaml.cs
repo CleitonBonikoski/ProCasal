@@ -1,5 +1,6 @@
 ﻿using Controller;
 using Model;
+using System;
 using System.Collections.Generic;
 using System.Windows;
 
@@ -10,7 +11,7 @@ namespace ProCasal
     /// </summary>
     public partial class MainWindow : Window
     {
-        PessoaController pes = new PessoaController();
+        PessoaController pessoaController = new PessoaController();
 
         #region Start Tela
         public MainWindow()
@@ -35,7 +36,10 @@ namespace ProCasal
             
             if (!iDLogin.Text.Equals("") && !nomeLogin.Text.Equals(""))
             {
-                Pessoa pessoa = pes.ValidacaoLogin(iDLogin.Text, nomeLogin.Text);
+
+                Application.Current.Properties["_user"] = pessoaController.pessoaSession(Convert.ToString(iDLogin.Text));
+
+                Pessoa pessoa = pessoaController.ValidacaoLogin(iDLogin.Text, nomeLogin.Text);
                 try
                 {
                     if (pessoa.IdPessoa > 0)
