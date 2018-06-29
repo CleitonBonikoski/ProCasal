@@ -29,6 +29,7 @@
         <Label Name="lbsobreNome" Content="Sobrenome  " Visibility="Hidden" HorizontalAlignment="Left" Margin="181,140,0,0" VerticalAlignment="Top" FontWeight="Bold" FontSize="16"/>
         <Label Name="lbdataNasc" Content="Nascimento  " Visibility="Hidden" HorizontalAlignment="Left" Margin="178,198,0,0" VerticalAlignment="Top" FontWeight="Bold" FontSize="16"/>
         <Label Name="lbsexo" Content="Sexo" Visibility="Hidden" HorizontalAlignment="Left" Margin="203,252,0,0" VerticalAlignment="Top" FontWeight="Bold" FontSize="16"/>
+        <Button Content="Salvar Casal" HorizontalAlignment="Left" Margin="167,367,0,0" VerticalAlignment="Top" Width="75"/>
 
     </Grid>
 </Window>

@@ -19,17 +19,34 @@ namespace ProCasal
     /// </summary>
     public partial class CadastroMes : Window
     {
+        #region CadastroMes
         public CadastroMes()
         {
             InitializeComponent();
             diaEspecial.SelectedDate = Convert.ToDateTime(DateTime.Now.ToLongTimeString());
         }
+        #endregion
 
+        #region Limpar Campos
         private void LimparCamposCadastroMes(object sender, RoutedEventArgs e)
         {
             diaEspecial.Text = "";
             txbLugarTop.Text = "";
             NivelFelicidade.Text = "";            
         }
+        #endregion
+
+        #region VoltarLogin
+
+        private void VoltarLogin(object sender, RoutedEventArgs e)
+        {
+            MainWindow login = new MainWindow();
+            login.Show();
+            Close();
+        }
+
+        #endregion
+
+
     }
 }
