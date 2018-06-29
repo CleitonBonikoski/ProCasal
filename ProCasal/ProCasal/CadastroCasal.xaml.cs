@@ -2,6 +2,7 @@
 using Model;
 using System;
 using System.Windows;
+using System.Windows.Media;
 
 namespace ProCasal
 {
@@ -22,9 +23,11 @@ namespace ProCasal
         #endregion
 
         #region SetParmCadastro
+
         private void SetParmCadastro(object sender, RoutedEventArgs e)
         {
             var usuario = Application.Current.Properties["_user"] as Pessoa;
+            var usuarioB = Application.Current.Properties["_userB"] as Pessoa;
 
             #region Mostrar campos PessoaA
             if (usuario.IdPessoa>0)
@@ -54,12 +57,14 @@ namespace ProCasal
                 sexoPessoaA.Visibility = Visibility;
                 sexoPessoaA.Text = usuario.Sexo;
 
+                ValidaSexo();
+
                 btnMostrarCampos.Visibility = Visibility.Hidden;
             }
             #endregion
 
             #region Mostrar campos PessoaB
-            if (usuario.IdPessoa > 0)
+            if (usuarioB.IdPessoa > 0)
             {
                 IdPessoaB.Visibility = Visibility;
                 IdPessoaB.Text = Convert.ToString(usuario.IdPessoa);
@@ -76,9 +81,48 @@ namespace ProCasal
                 sexoPessoaB.Visibility = Visibility;
                 sexoPessoaB.Text = usuario.Sexo;
 
+                ValidaSexo();
+
+            }
+            else
+            {
+                btnCadastrarPessoa.Visibility = Visibility;
             }
             #endregion
 
+        }
+
+        #endregion
+
+        #region ValidaSexo
+        public void ValidaSexo()
+        {
+            if (sexoPessoaA.Text.ToLower().Contains("mul"))
+            {
+                IdPessoaA.Foreground = Brushes.Pink;
+
+                nomePessoaA.Foreground = Brushes.Pink;
+
+                sobreNomePessoaA.Foreground = Brushes.Pink;
+
+                dataNascimentoPessoaA.Foreground = Brushes.Pink;
+
+                sexoPessoaA.Foreground = Brushes.Pink;
+
+            }
+
+            if (sexoPessoaB.Text.ToLower().Contains("mul"))
+            {
+                IdPessoaB.Foreground = Brushes.Pink;
+
+                nomePessoaB.Foreground = Brushes.Pink;
+
+                sobreNomePessoaB.Foreground = Brushes.Pink;
+
+                dataNascimentoPessoaB.Foreground = Brushes.Pink;
+
+                sexoPessoaB.Foreground = Brushes.Pink;
+            }
         }
         #endregion
 

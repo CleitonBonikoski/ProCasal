@@ -45,7 +45,7 @@ namespace Controller
             context.SaveChanges();
 
             pessoaSession = BuscarPessoa(pessoaAtual.Nome, pessoaAtual.SobreNome, pessoaAtual.DataNasc, pessoaAtual.Sexo);
-
+            
             return pessoaSession.IdPessoa;
         }
 
