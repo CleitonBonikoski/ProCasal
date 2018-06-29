@@ -1,4 +1,5 @@
-﻿using Model;
+﻿using Controller;
+using Model;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -50,6 +51,15 @@ namespace ProCasal
         #region Excluir
         private void ExcluirPessoaCadastrada(object sender, RoutedEventArgs e)
         {
+            PessoaController pessoaController = new PessoaController();
+
+            var usuario = Application.Current.Properties["_user"] as Pessoa;
+
+            pessoaController.ExcluirPessoa(usuario.IdPessoa);
+
+            MainWindow login = new MainWindow();
+            login.Show();
+            Close();
 
         }
         #endregion

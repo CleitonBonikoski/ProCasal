@@ -48,17 +48,10 @@ namespace Controller
             return pessoaSession.IdPessoa;
         }
 
-        public void AtualizarPessoa(Pessoa pessoa)
-        {
-            context.Entry(pessoa).State =
-            System.Data.Entity.EntityState.Modified;
-
-            context.SaveChanges();
-        }
 
         #endregion
 
-        #region BuscarPessoa
+        #region BuscarPessoa por parametros
 
         private Pessoa BuscarPessoa(string nome, string sobreNome, string dataNasc, string sexo)
         {
@@ -103,10 +96,33 @@ namespace Controller
 
         #endregion
 
-        #region UpDate Pessoa
+        #region Atualizar Pessoa
 
+        public void AtualizarPessoa(Pessoa pessoa)
+        {
+            context.Entry(pessoa).State =
+            System.Data.Entity.EntityState.Modified;
+
+            context.SaveChanges();
+        }
 
 
         #endregion
+
+        #region Remover Pessoa
+
+        public void ExcluirPessoa(int idPessoa)
+        {
+            Pessoa pessoa = context.dBpessoa.Find(idPessoa);
+
+            if (pessoa != null)
+            {
+                context.dBpessoa.Remove(pessoa);
+                context.SaveChanges();
+            }
+        }
+
+        #endregion
+
     }
 }

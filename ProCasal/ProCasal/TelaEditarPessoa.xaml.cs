@@ -21,6 +21,7 @@ namespace ProCasal
     /// </summary>
     public partial class TelaEditarPessoa : Window
     {
+        #region TelaEditarPessoa
         public TelaEditarPessoa()
         {
             InitializeComponent();
@@ -33,12 +34,14 @@ namespace ProCasal
             txbSexoPessoa.Text = usuario.Sexo;
 
         }
+        #endregion
 
+        #region Editar Pessoa
         private void EditarPessoa(object sender, RoutedEventArgs e)
         {
             PessoaController pessoaController = new PessoaController();
             Pessoa pessoa = new Pessoa();
-            
+
             var usuario = Application.Current.Properties["_user"] as Pessoa;
 
             pessoa.IdPessoa = usuario.IdPessoa;
@@ -48,8 +51,13 @@ namespace ProCasal
             pessoa.Sexo = txbSexoPessoa.Text;
 
             pessoaController.AtualizarPessoa(pessoa);
-            
+
+            MainWindow login = new MainWindow();
+            login.Show();
+            Close();
+
         }
+        #endregion
 
         #region VoltarLogin
 
