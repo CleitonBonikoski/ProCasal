@@ -76,6 +76,9 @@
     <Compile Include="SalvarCasal.xaml.cs">
       <DependentUpon>SalvarCasal.xaml</DependentUpon>
     </Compile>
+    <Compile Include="TelaApresentacaoCasal.xaml.cs">
+      <DependentUpon>TelaApresentacaoCasal.xaml</DependentUpon>
+    </Compile>
     <Compile Include="TelaEditarPessoa.xaml.cs">
       <DependentUpon>TelaEditarPessoa.xaml</DependentUpon>
     </Compile>
@@ -111,6 +114,10 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="SalvarCasal.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="TelaApresentacaoCasal.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

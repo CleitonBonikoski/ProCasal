@@ -1,0 +1,32 @@
+﻿<Window x:Class="ProCasal.TelaApresentacaoCasal"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ProCasal"
+        mc:Ignorable="d"
+        Title="TelaApresentacaoCasal" Height="353" Width="561">
+    <Grid>
+        <Grid Background="Gray" HorizontalAlignment="Left" Width="555" Height="326" VerticalAlignment="Top" Margin="-2,-4,0,0">
+            <Label Content="Mostrar Casal" HorizontalAlignment="Left" Foreground="Purple" Margin="214,10,0,0" VerticalAlignment="Top" FontSize="16" FontWeight="Bold" FontStyle="Italic"/>
+
+            <TextBlock Name="IdPessoaA" Foreground="Green" Margin="72,140,-42,0" TextWrapping="Wrap" Text="Id Pessoa A" VerticalAlignment="Top" FontSize="18" FontWeight="Bold" FontStyle="Italic"/>
+            <TextBlock Name="nomePessoaA" Foreground="Green" HorizontalAlignment="Left" Margin="70,164,0,0" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="18" FontWeight="Bold" FontStyle="Italic"><Run Text="Nome"/><Run Text=" A"/></TextBlock>
+            <TextBlock Name="sobreNomePessoaA" Foreground="Green" HorizontalAlignment="Left" Margin="70,188,0,0" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="18" FontWeight="Bold" FontStyle="Italic"><Run Text="Sobrenome"/><Run Text=" A"/></TextBlock>
+            <TextBlock Name="dataNascimentoPessoaA" Foreground="Green" HorizontalAlignment="Left" Margin="72,217,0,0" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="18" FontWeight="Bold" FontStyle="Italic"><Run Text="Data"/><Run Text=" A"/></TextBlock>
+            <TextBlock Name="sexoPessoaA" Foreground="Green" HorizontalAlignment="Left" Margin="72,241,0,0" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="18" FontWeight="Bold" FontStyle="Italic" RenderTransformOrigin="0.649,-3.106"><Run Text="Sexo"/><Run Text=" A"/></TextBlock>
+
+            <TextBlock Name="IdPessoaB" Foreground="Green"  HorizontalAlignment="Left" Margin="328,140,0,0" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="18" FontWeight="Bold" FontStyle="Italic"><Run Text="Id Pessoa "/><Run Text="B"/></TextBlock>
+            <TextBlock Name="nomePessoaB" Foreground="Green"  HorizontalAlignment="Left" Margin="328,169,0,0" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="18" FontWeight="Bold" FontStyle="Italic"><Run Text="Nome"/><Run Text=" "/><Run Text="B"/></TextBlock>
+            <TextBlock Name="sobreNomePessoaB" Foreground="Green"   HorizontalAlignment="Left" Margin="328,194,0,0" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="18" FontWeight="Bold" FontStyle="Italic"><Run Text="Sobrenome"/><Run Text=" "/><Run Text="B"/></TextBlock>
+            <TextBlock Name="dataNascimentoPessoaB" Foreground="Green"  HorizontalAlignment="Left" Margin="328,218,0,0" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="18" FontWeight="Bold" FontStyle="Italic"><Run Text="Data"/><Run Text=" "/><Run Text="B"/></TextBlock>
+            <TextBlock Name="sexoPessoaB" Foreground="Green"  HorizontalAlignment="Left" Margin="328,242,0,0" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="18" FontWeight="Bold" FontStyle="Italic"><Run Text="Sexo"/><Run Text=" "/><Run Text="B"/></TextBlock>
+
+            <Button Content="Ir Login" HorizontalAlignment="Left" Margin="470,10,0,0" VerticalAlignment="Top" Width="75" Click="VoltarLogin"/>
+            <Button Content="Voltar" HorizontalAlignment="Left" Margin="8,10,0,0" VerticalAlignment="Top" Width="75" Click="VoltarTelaOutros" RenderTransformOrigin="0.039,-3.428"/>
+
+
+        </Grid>
+
+    </Grid>
+</Window>

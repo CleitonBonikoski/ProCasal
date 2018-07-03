@@ -16,6 +16,7 @@
             <Label Content="Editar Seus Dados" HorizontalAlignment="Left" Foreground="Silver" Margin="198,84,0,0" VerticalAlignment="Top" FontSize="16" FontWeight="Bold" FontStyle="Italic" Height="36" Width="157"/>
             <Label Content="Excluir Conta" HorizontalAlignment="Left" Foreground="Silver" Margin="36,84,0,0" VerticalAlignment="Top" FontSize="16" FontWeight="Bold" FontStyle="Italic" Height="36" Width="157"/>
             <Label Content="Mostra Seus Dados" HorizontalAlignment="Left" Foreground="Silver" Margin="390,84,0,0" VerticalAlignment="Top" FontSize="16" FontWeight="Bold" FontStyle="Italic" Height="36" Width="157"/>
+            <Button Name="btnMostrarCasal"  Content="Mostrar Casal" HorizontalAlignment="Left" Margin="407,190,0,0" VerticalAlignment="Top" Width="104" Click="MostrarCasal" />
 
 
         </Grid>

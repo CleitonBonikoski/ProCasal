@@ -62,7 +62,22 @@ namespace ProCasal
             Close();
 
         }
+
         #endregion
+
+        #region  MostrarCasal
+
+        private void MostrarCasal(object sender, RoutedEventArgs e)
+        {
+            TelaApresentacaoCasal telaApresentacaoCasal = new TelaApresentacaoCasal();
+            telaApresentacaoCasal.Show();
+            Close();
+
+        }
+
+
+        #endregion
+
 
     }
 }
