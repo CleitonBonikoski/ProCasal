@@ -35,5 +35,23 @@ namespace Controller
         }
 
         #endregion
+
+        #region Remover Casal
+
+        public void ExcluirCasal(int idPessoa)
+        {
+            PessoaController pessoaController = new PessoaController();
+            CasalController casalController = new CasalController();
+            Casal casal = new Casal();
+            casal = casalController.BuscarCasal(idPessoa);
+
+            if (casal != null)
+            {
+                context.dBcasal.Remove(casal);
+                context.SaveChanges();
+            }
+        }
+
+        #endregion
     }
 }

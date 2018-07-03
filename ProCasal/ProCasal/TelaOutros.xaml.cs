@@ -76,8 +76,22 @@ namespace ProCasal
         }
 
 
+
         #endregion
 
+        #region ExcluirCasal
+        private void ExcluirCasal(object sender, RoutedEventArgs e)
+        {
+            var usuario = Application.Current.Properties["_user"] as Pessoa;
+            CasalController casalController = new CasalController();
 
+            casalController.ExcluirCasal(usuario.IdPessoa);
+
+            MainWindow main = new MainWindow();
+            main.Show();
+            Close();
+
+        }
+        #endregion  
     }
 }
