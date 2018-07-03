@@ -50,7 +50,7 @@
     <Compile Include="Casal.cs" />
     <Compile Include="Pessoa.cs" />
     <Compile Include="Mes.cs" />
-    <Compile Include="ProdutoContext.cs" />
+    <Compile Include="ModelContext.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
