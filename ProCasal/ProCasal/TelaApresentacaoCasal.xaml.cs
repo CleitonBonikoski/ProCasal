@@ -1,4 +1,5 @@
-﻿using Model;
+﻿using Controller;
+using Model;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -24,6 +25,39 @@ namespace ProCasal
         {
             InitializeComponent();
             var usuario = Application.Current.Properties["_user"] as Pessoa;
+            CasalController casalController = new CasalController();
+            Casal casal = new Casal();
+            try
+            {
+                casal = casalController.BuscarCasal(usuario.IdPessoa);
+                txtIdCasal.Text = Convert.ToString(casal.IdCasal);
+                txtIdCasal.Visibility = Visibility.Visible;
+                txtDataInicioCasal.Text = Convert.ToString(casal.DataInicio);
+                txtDataInicioCasal.Visibility = Visibility.Visible;
+                txtPrimeiroEncontroCasal.Text = Convert.ToString(casal.PrimeiroEncontro);
+                txtPrimeiroEncontroCasal.Visibility = Visibility.Visible;
+                txtIdPessoaACasal.Text = Convert.ToString(casal.idPessoaA);
+                txtIdPessoaACasal.Visibility = Visibility.Visible;
+                txtIdPessoaBCasal.Text = Convert.ToString(casal.idPessoaB);
+                txtIdPessoaBCasal.Visibility = Visibility.Visible;
+                txtResumoCasal.Text = Convert.ToString(casal.Resumo);
+                txtResumoCasal.Visibility = Visibility.Visible;
+
+            }
+            catch (Exception)
+            {
+
+                casal.IdCasal = 0;
+                casal.DataInicio = Convert.ToString(DateTime.Today);
+                casal.PrimeiroEncontro = "";
+                casal.MesAtual = Convert.ToString(DateTime.Today);
+                casal.idPessoaA = 0;
+                casal.idPessoaB = 0;
+                casal.Resumo = "Casal Nao Encontrado!";
+
+
+            }
+            
 
         }
 

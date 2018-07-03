@@ -10,17 +10,19 @@
         <Grid Background="Gray" HorizontalAlignment="Left" Width="555" Height="326" VerticalAlignment="Top" Margin="-2,-4,0,0">
             <Label Content="Mostrar Casal" HorizontalAlignment="Left" Foreground="Purple" Margin="214,10,0,0" VerticalAlignment="Top" FontSize="16" FontWeight="Bold" FontStyle="Italic"/>
 
-            <TextBlock Name="IdPessoaA" Foreground="Green" Margin="72,140,-42,0" TextWrapping="Wrap" Text="Id Pessoa A" VerticalAlignment="Top" FontSize="18" FontWeight="Bold" FontStyle="Italic"/>
-            <TextBlock Name="nomePessoaA" Foreground="Green" HorizontalAlignment="Left" Margin="70,164,0,0" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="18" FontWeight="Bold" FontStyle="Italic"><Run Text="Nome"/><Run Text=" A"/></TextBlock>
-            <TextBlock Name="sobreNomePessoaA" Foreground="Green" HorizontalAlignment="Left" Margin="70,188,0,0" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="18" FontWeight="Bold" FontStyle="Italic"><Run Text="Sobrenome"/><Run Text=" A"/></TextBlock>
-            <TextBlock Name="dataNascimentoPessoaA" Foreground="Green" HorizontalAlignment="Left" Margin="72,217,0,0" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="18" FontWeight="Bold" FontStyle="Italic"><Run Text="Data"/><Run Text=" A"/></TextBlock>
-            <TextBlock Name="sexoPessoaA" Foreground="Green" HorizontalAlignment="Left" Margin="72,241,0,0" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="18" FontWeight="Bold" FontStyle="Italic" RenderTransformOrigin="0.649,-3.106"><Run Text="Sexo"/><Run Text=" A"/></TextBlock>
+            <TextBlock Name="IdCasal" Foreground="Green" Margin="140,69,346,0" TextWrapping="Wrap" Text="Id Casal" VerticalAlignment="Top" FontSize="18" FontWeight="Bold" FontStyle="Italic"/>
+            <TextBlock Name="IdPessoaA" Foreground="Green" Margin="114,226,331,0" TextWrapping="Wrap" Text="Id Pessoa A" VerticalAlignment="Top" FontSize="18" FontWeight="Bold" FontStyle="Italic"/>
+            <TextBlock Name="IdPessoaB" Foreground="Green"  HorizontalAlignment="Left" Margin="114,255,0,0" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="18" FontWeight="Bold" FontStyle="Italic"><Run Text="Id Pessoa "/><Run Text="B"/></TextBlock>
+            <TextBlock Name="DataInicio" Foreground="Green" Margin="114,98,346,0" TextWrapping="Wrap" Text="Data Início" VerticalAlignment="Top" FontSize="18" FontWeight="Bold" FontStyle="Italic"/>
+            <TextBlock Name="PrimeiroEncontro" Foreground="Green" Margin="54,129,346,0" TextWrapping="Wrap" Text="Primeiro Encontro" VerticalAlignment="Top" FontSize="18" FontWeight="Bold" FontStyle="Italic"/>
+            <TextBlock Name="Resumo" Foreground="Green" Margin="140,284,346,0" TextWrapping="Wrap" Text="Resumo" VerticalAlignment="Top" FontSize="18" FontWeight="Bold" FontStyle="Italic"/>
 
-            <TextBlock Name="IdPessoaB" Foreground="Green"  HorizontalAlignment="Left" Margin="328,140,0,0" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="18" FontWeight="Bold" FontStyle="Italic"><Run Text="Id Pessoa "/><Run Text="B"/></TextBlock>
-            <TextBlock Name="nomePessoaB" Foreground="Green"  HorizontalAlignment="Left" Margin="328,169,0,0" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="18" FontWeight="Bold" FontStyle="Italic"><Run Text="Nome"/><Run Text=" "/><Run Text="B"/></TextBlock>
-            <TextBlock Name="sobreNomePessoaB" Foreground="Green"   HorizontalAlignment="Left" Margin="328,194,0,0" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="18" FontWeight="Bold" FontStyle="Italic"><Run Text="Sobrenome"/><Run Text=" "/><Run Text="B"/></TextBlock>
-            <TextBlock Name="dataNascimentoPessoaB" Foreground="Green"  HorizontalAlignment="Left" Margin="328,218,0,0" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="18" FontWeight="Bold" FontStyle="Italic"><Run Text="Data"/><Run Text=" "/><Run Text="B"/></TextBlock>
-            <TextBlock Name="sexoPessoaB" Foreground="Green"  HorizontalAlignment="Left" Margin="328,242,0,0" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="18" FontWeight="Bold" FontStyle="Italic"><Run Text="Sexo"/><Run Text=" "/><Run Text="B"/></TextBlock>
+            <TextBlock Name="txtIdCasal" Foreground="Green" Visibility="Hidden" Margin="249,69,75,0" TextWrapping="Wrap" Text="Id Casal" VerticalAlignment="Top" FontSize="18" FontWeight="Bold" FontStyle="Italic"/>
+            <TextBlock Name="txtIdPessoaACasal" Foreground="Green" Visibility="Hidden" Margin="249,226,196,0" TextWrapping="Wrap" Text="Id Pessoa A" VerticalAlignment="Top" FontSize="18" FontWeight="Bold" FontStyle="Italic"/>
+            <TextBlock Name="txtIdPessoaBCasal" Foreground="Green" Visibility="Hidden"  HorizontalAlignment="Left" Margin="249,255,0,0" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="18" FontWeight="Bold" FontStyle="Italic"><Run Text="Id Pessoa "/><Run Text="B"/></TextBlock>
+            <TextBlock Name="txtDataInicioCasal" Foreground="Green" Visibility="Hidden" Margin="249,98,75,0" TextWrapping="Wrap" Text="Data Início" VerticalAlignment="Top" FontSize="18" FontWeight="Bold" FontStyle="Italic"/>
+            <TextBlock Name="txtPrimeiroEncontroCasal" Foreground="Green" Visibility="Hidden" Margin="249,129,10,0" TextWrapping="Wrap" Text="Primeiro Encontro" VerticalAlignment="Top" FontSize="18" FontWeight="Bold" FontStyle="Italic" Height="92"/>
+            <TextBlock Name="txtResumoCasal" Foreground="Green" Visibility="Hidden" Margin="249,284,10,0" TextWrapping="Wrap" Text="Resumo" VerticalAlignment="Top" FontSize="18" FontWeight="Bold" FontStyle="Italic"/>
 
             <Button Content="Ir Login" HorizontalAlignment="Left" Margin="470,10,0,0" VerticalAlignment="Top" Width="75" Click="VoltarLogin"/>
             <Button Content="Voltar" HorizontalAlignment="Left" Margin="8,10,0,0" VerticalAlignment="Top" Width="75" Click="VoltarTelaOutros" RenderTransformOrigin="0.039,-3.428"/>

@@ -1,5 +1,6 @@
 ﻿using Model;
 using System;
+using System.Linq;
 
 namespace Controller
 {
@@ -22,7 +23,15 @@ namespace Controller
 
             context.dBcasal.Add(casal);
             context.SaveChanges();
+        }
 
+        #endregion
+
+        #region BuscarCasal
+
+        public Casal BuscarCasal(int idPessoaA)
+        {
+            return context.dBcasal.Where(a => a.idPessoaA  == idPessoaA ).FirstOrDefault();
         }
 
         #endregion
